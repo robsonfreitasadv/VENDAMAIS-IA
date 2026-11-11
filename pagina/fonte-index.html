@@ -1,0 +1,520 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<!-- ARQUIVO-FONTE: edite este arquivo e rode "python embutir.py" para gerar o index.html com as imagens embutidas. -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VENDAMAIS IA — Marketing e vendas para negócios de beleza</title>
+<meta name="description" content="Mais de 220 comandos prontos para ChatGPT e Gemini, planilha de gestão e um plano de 30 dias para negócios de beleza organizarem o marketing, o atendimento e as vendas.">
+<meta property="og:title" content="VENDAMAIS IA — Seu pequeno negócio, com inteligência de gente grande">
+<meta property="og:description" content="Kit prático para negócios de beleza: comandos prontos para ChatGPT e Gemini, planilha de gestão e plano de 30 dias.">
+<meta property="og:image" content="img/og.jpg">
+<meta name="theme-color" content="#17283B">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,500&display=swap" rel="stylesheet">
+<!-- Pixel / analytics: inserir aqui quando a plataforma estiver configurada (ver oferta/FUNIL.md). -->
+<style>
+:root{
+  --navy:#17283B;--navy-2:#0F1C2B;--navy-3:#22384F;
+  --champ:#D9BFA2;--champ-ink:#8A6B47;--rosa:#EBCFD1;--rosa-2:#F6E6E7;
+  --off:#F7F3ED;--paper:#FFFDFB;--ink:#1F2933;--muted:#5B6670;--line:#E6DED3;
+  --pink:#C2185B;--pink-2:#D81B60;--ok:#2E7D5B;
+  --r-lg:32px;--r-md:20px;--r-sm:12px;
+  --wrap:1120px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:Montserrat,system-ui,sans-serif;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+h1,h2,h3{font-family:'Playfair Display',Georgia,serif;line-height:1.15;margin:0;color:var(--navy);letter-spacing:-.01em}
+h2{font-size:clamp(30px,4.4vw,46px)}
+h3{font-size:22px}
+p{margin:0 0 14px}
+a{color:inherit}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 16px}
+section{padding:72px 0}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--champ-ink);margin-bottom:12px}
+.lead{font-size:clamp(17px,2vw,20px);color:var(--muted);max-width:720px}
+.center{text-align:center}.center .lead{margin-left:auto;margin-right:auto}
+.dark{background:radial-gradient(1000px 600px at 80% 0%,#2A4560 0%,var(--navy) 50%,var(--navy-2) 100%);color:#fff}
+.dark h1,.dark h2,.dark h3{color:#fff}.dark .lead{color:#C9D3DD}.dark .eyebrow{color:var(--champ)}
+.soft{background:var(--off)}
+
+/* botões */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;text-decoration:none;font-weight:800;font-size:18px;color:#fff;background:linear-gradient(90deg,var(--pink-2),var(--pink));padding:18px 34px;border-radius:99px;box-shadow:0 12px 30px rgba(194,24,91,.35);transition:transform .15s ease,box-shadow .15s ease;text-align:center}
+.btn:hover{transform:translateY(-2px);box-shadow:0 16px 36px rgba(194,24,91,.45)}
+.btn svg{width:22px;height:22px;flex:none}
+.btn-note{font-size:14px;color:var(--muted);margin-top:12px}
+.dark .btn-note{color:#B8C4D0}
+
+/* topo */
+.top{padding:22px 0 0}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800;font-size:22px;letter-spacing:.02em;color:#fff}
+.brand svg{width:40px;height:40px}.brand span{color:var(--champ)}
+.hero{padding:40px 0 80px}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+.hero h1{font-size:clamp(36px,5.4vw,60px)}
+.hero h1 em{font-style:normal;color:var(--champ)}
+.hero .lead{margin:20px 0 28px}
+.trust{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:22px;font-size:14px;color:#C9D3DD;font-weight:600}
+.trust span{display:inline-flex;align-items:center;gap:8px}
+.trust svg{width:18px;height:18px;color:var(--champ)}
+header.dark{overflow:hidden}
+.fan{position:relative;width:100%;max-width:480px;margin:0 auto;aspect-ratio:1/1}
+.fan img{position:absolute;border-radius:10px;box-shadow:0 22px 50px rgba(0,0,0,.5),0 0 0 1px rgba(255,255,255,.10)}
+.fan .c-left{width:44%;left:2%;top:12%;transform:rotate(-9deg);opacity:.92}
+.fan .c-right{width:44%;right:2%;top:12%;transform:rotate(9deg);opacity:.92}
+.fan .c-front{width:54%;left:23%;top:2%;z-index:2;box-shadow:0 28px 60px rgba(0,0,0,.55),0 0 0 2px var(--champ)}
+.fan-tag{position:absolute;left:50%;bottom:2%;transform:translateX(-50%);z-index:3;white-space:nowrap;background:var(--champ);color:var(--navy);font-weight:800;font-size:14px;padding:9px 18px;border-radius:99px;box-shadow:0 10px 24px rgba(0,0,0,.35)}
+
+/* dores */
+.pains{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:36px}
+.pain{display:flex;gap:14px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:var(--r-md);padding:18px 20px;font-weight:500}
+.pain svg{flex:none;width:24px;height:24px;color:var(--pink);margin-top:2px}
+
+/* virada */
+.turn{max-width:780px;margin:0 auto;text-align:center}
+.turn h2 em{font-style:italic;color:var(--champ-ink)}
+
+/* passos */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:36px 0 28px}
+.step{background:#fff;border:1px solid var(--line);border-radius:var(--r-md);padding:24px}
+.step b{display:inline-grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--navy);color:var(--champ);font-size:16px;margin-bottom:12px}
+.step h3{font-family:Montserrat,sans-serif;font-size:18px;font-weight:700;margin-bottom:6px}
+.step p{color:var(--muted);font-size:15.5px;margin:0}
+.prompt{background:var(--off);border-left:3px solid var(--champ);border-radius:0 var(--r-md) var(--r-md) 0;padding:20px 24px;max-width:760px;margin:0 auto;font-size:16px}
+.prompt .lbl{font-size:11.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--champ-ink);margin-bottom:8px}
+.ph{background:var(--rosa-2);color:#7A3E46;font-weight:600;border-radius:4px;box-shadow:0 0 0 2px var(--rosa-2)}
+
+/* antes e depois */
+.ba{display:grid;gap:22px;margin-top:36px}
+.ba-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;background:#fff;border:1px solid var(--line);border-radius:var(--r-lg);padding:22px}
+.ba-row .q{grid-column:1/-1;font-size:14px;font-weight:700;color:var(--navy);display:flex;gap:8px;align-items:center}
+.bubble{border-radius:18px;padding:14px 16px;font-size:15.5px;position:relative}
+.bubble small{display:block;font-size:11.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;margin-bottom:6px}
+.bad{background:#F4F4F5;color:#52525B}.bad small{color:#A1A1AA}
+.good{background:#E7F5EE;color:#1E3A2F}.good small{color:var(--ok)}
+
+/* o que recebe */
+.mods{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:36px}
+.mod{background:#fff;border:1px solid var(--line);border-radius:var(--r-md);overflow:hidden;display:flex;gap:16px;padding:16px;align-items:center}
+.mod img{width:78px;border-radius:6px;box-shadow:0 6px 16px rgba(23,40,59,.25);flex:none}
+.mod .n{font-size:12px;font-weight:700;letter-spacing:.12em;color:var(--champ-ink);text-transform:uppercase}
+.mod h3{font-family:Montserrat,sans-serif;font-size:16.5px;font-weight:700;margin:2px 0 4px}
+.mod p{margin:0;font-size:14.5px;color:var(--muted)}
+.mod .pill{display:inline-block;margin-top:6px;font-size:12.5px;font-weight:700;background:var(--rosa);color:var(--navy);padding:3px 10px;border-radius:99px}
+.bonus{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:22px}
+.bon{background:var(--navy);color:#fff;border-radius:var(--r-md);padding:24px}
+.bon .tag{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;background:var(--champ);color:var(--navy);padding:3px 10px;border-radius:99px;margin-bottom:10px}
+.bon h3{color:#fff;font-family:Montserrat,sans-serif;font-size:19px;font-weight:700;margin-bottom:6px}
+.bon p{color:#C9D3DD;font-size:15.5px;margin:0}
+.totals{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:28px}
+.totals span{background:#fff;border:1px solid var(--line);border-radius:99px;padding:8px 16px;font-weight:700;font-size:15px;color:var(--navy)}
+
+/* por dentro */
+.inside{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:36px}
+.inside figure{margin:0;background:#fff;border-radius:var(--r-md);padding:12px;box-shadow:0 10px 30px rgba(23,40,59,.10)}
+.inside img{border-radius:8px;border:1px solid var(--line)}
+.inside figcaption{font-size:14px;color:var(--muted);padding:10px 4px 2px}
+.sheet{margin:22px 0 0;background:#fff;border-radius:var(--r-lg);padding:16px;box-shadow:0 10px 30px rgba(23,40,59,.10)}
+.sheet img{border-radius:10px;border:1px solid var(--line)}
+.sheet figcaption{font-size:14px;color:var(--muted);padding:12px 6px 2px}
+
+/* plano */
+.weeks{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:36px}
+.week{border-radius:var(--r-md);padding:22px;background:rgba(255,255,255,.06);border:1px solid rgba(217,191,162,.25)}
+.week small{color:var(--champ);font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:12px}
+.week h3{font-size:21px;margin:6px 0 8px}
+.week p{color:#C9D3DD;font-size:15px;margin:0}
+
+/* para quem */
+.fit{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:36px}
+.fit div{border-radius:var(--r-md);padding:26px;background:#fff;border:1px solid var(--line)}
+.fit h3{font-family:Montserrat,sans-serif;font-size:18px;font-weight:800;margin-bottom:12px}
+.fit ul{margin:0;padding:0;list-style:none}
+.fit li{padding:7px 0 7px 30px;position:relative;font-size:16px}
+.fit li::before{position:absolute;left:0;top:6px;font-weight:800}
+.yes li::before{content:"✓";color:var(--ok)}
+.no li::before{content:"✕";color:#B91C1C}
+
+/* oferta */
+.offer{max-width:640px;margin:36px auto 0;background:#fff;color:var(--ink);border-radius:var(--r-lg);padding:34px 30px;box-shadow:0 30px 60px rgba(0,0,0,.35);text-align:left}
+.offer ul{list-style:none;margin:0 0 22px;padding:0}
+.offer li{display:flex;gap:12px;padding:9px 0;border-bottom:1px solid var(--line);font-size:16px}
+.offer li:last-child{border:0}
+.offer li svg{flex:none;width:20px;height:20px;color:var(--ok);margin-top:3px}
+.offer li b{color:var(--navy)}
+.price{text-align:center;margin:8px 0 22px}
+.price .val{font-family:'Playfair Display',serif;font-size:64px;font-weight:700;color:var(--navy);line-height:1}
+.price .val small{font-size:28px;vertical-align:top;margin-right:4px}
+.price .inst{color:var(--muted);font-size:15px;margin-top:6px}
+.offer .btn{width:100%}
+.seals{display:flex;justify-content:center;flex-wrap:wrap;gap:8px 18px;margin-top:16px;font-size:13.5px;color:var(--muted);font-weight:600}
+.seals span{display:inline-flex;align-items:center;gap:6px}.seals svg{width:16px;height:16px;color:var(--champ-ink)}
+
+/* garantia */
+.guar{display:flex;gap:28px;align-items:center;max-width:820px;margin:0 auto;background:#fff;border:1px solid var(--line);border-radius:var(--r-lg);padding:30px}
+.guar .seal{flex:none;width:120px;height:120px;border-radius:50%;background:var(--navy);color:var(--champ);display:grid;place-items:center;text-align:center;font-weight:800;line-height:1.05;box-shadow:0 0 0 6px var(--rosa)}
+.guar .seal b{display:block;font-family:'Playfair Display',serif;font-size:46px}
+.guar .seal span{font-size:12px;letter-spacing:.12em;text-transform:uppercase}
+.guar h3{margin-bottom:8px}.guar p{color:var(--muted);margin:0}
+
+/* faq */
+.faq{max-width:820px;margin:36px auto 0}
+.faq details{background:#fff;border:1px solid var(--line);border-radius:var(--r-md);margin-bottom:12px;padding:0 22px}
+.faq summary{cursor:pointer;list-style:none;font-weight:700;color:var(--navy);padding:18px 30px 18px 0;position:relative;font-size:16.5px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:0;top:14px;font-size:24px;color:var(--champ-ink);font-weight:500}
+.faq details[open] summary::after{content:"–"}
+.faq details p{color:var(--muted);padding:0 0 18px;margin:0;font-size:16px}
+
+footer{background:var(--navy-2);color:#93A3B5;font-size:13.5px;padding:40px 0 110px}
+footer .brand{font-size:18px;margin-bottom:14px}
+footer .brand svg{width:30px;height:30px}
+footer p{margin:0 0 10px;max-width:820px}
+footer nav{display:flex;flex-wrap:wrap;gap:8px 20px;margin:14px 0}
+footer a{color:#C9D3DD}
+
+/* barra fixa no celular */
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:50;background:rgba(15,28,43,.96);backdrop-filter:blur(8px);padding:10px 16px calc(10px + env(safe-area-inset-bottom));display:none;align-items:center;gap:14px;transform:translateY(100%);transition:transform .25s ease}
+.sticky.show{transform:none}
+.sticky .p{color:#fff;font-weight:800;font-size:18px;line-height:1.1}.sticky .p small{display:block;font-weight:500;font-size:12px;color:#B8C4D0}
+.sticky .btn{flex:1;padding:14px 18px;font-size:16px}
+
+@media (max-width:900px){
+  section{padding:56px 0}
+  .hero-grid{grid-template-columns:1fr;gap:28px}
+  .fan{max-width:380px}
+  .fan-tag{font-size:12.5px;padding:8px 14px}
+  .pains,.steps,.ba-row,.mods,.bonus,.inside,.fit{grid-template-columns:1fr}
+  .weeks{grid-template-columns:1fr 1fr}
+  .guar{flex-direction:column;text-align:center}
+  .sticky{display:flex}
+  .btn{width:100%}
+}
+@media (max-width:520px){
+  body{font-size:16px}
+  .weeks{grid-template-columns:1fr}
+  .offer{padding:26px 18px}
+  .price .val{font-size:54px}
+  .ba-row{padding:16px}
+}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto;transition:none!important}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="logo" viewBox="0 0 64 64"><rect x="6" y="40" width="9" height="18" rx="2" fill="#D9BFA2"/><rect x="20" y="31" width="9" height="27" rx="2" fill="#D9BFA2"/><rect x="34" y="22" width="9" height="36" rx="2" fill="#D9BFA2"/><rect x="48" y="12" width="9" height="46" rx="2" fill="#D9BFA2"/><path d="M6 30 L24 16 L34 22 L54 5" fill="none" stroke="#EBCFD1" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M46 5 L55 4 L54 13" fill="none" stroke="#EBCFD1" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="arrow" viewBox="0 0 24 24"><path d="M5 12h13M13 7l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="currentColor" opacity=".14"/><path d="m7.5 12.3 3 3 6-6.3" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="x" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="currentColor" opacity=".12"/><path d="M12 7.5v5.5M12 16.4v.1" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
+  <symbol id="down" viewBox="0 0 24 24"><path d="M12 4v11M7.5 10.5 12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="shield" viewBox="0 0 24 24"><path d="M12 3.5 19 6v5.5c0 4.3-3 7.6-7 9-4-1.4-7-4.7-7-9V6z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 12l2.2 2.2L15.5 10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="mail" viewBox="0 0 24 24"><rect x="3.5" y="5.5" width="17" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m4 7 8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="lock" viewBox="0 0 24 24"><rect x="5" y="10.5" width="14" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+  <symbol id="chat" viewBox="0 0 24 24"><path d="M4 18.5V7a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v6a3 3 0 0 1-3 3H8z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+</svg>
+
+<!-- ============ TOPO ============ -->
+<header class="dark">
+  <div class="wrap top">
+    <div class="brand"><svg><use href="#logo"/></svg>VENDAMAIS <span>IA</span></div>
+  </div>
+  <div class="wrap hero">
+    <div class="hero-grid">
+      <div>
+        <div class="eyebrow">Para salões, barbearias, estética, manicures e sobrancelhas</div>
+        <h1>Você cuida da beleza das suas clientes. <em>O VENDAMAIS IA ajuda você a cuidar do marketing e das vendas.</em></h1>
+        <p class="lead">Mais de 220 comandos prontos para ChatGPT e Gemini, uma planilha de gestão e um plano de 30 dias para você saber o que postar, responder melhor no WhatsApp, movimentar os dias fracos e trazer de volta quem sumiu — sem contratar agência.</p>
+        <a class="btn cta" href="#oferta">Quero o VENDAMAIS IA <svg><use href="#arrow"/></svg></a>
+        <div class="trust">
+          <span><svg><use href="#down"/></svg>Download imediato</span>
+          <span><svg><use href="#shield"/></svg>7 dias de garantia</span>
+        </div>
+      </div>
+      <div class="fan" aria-label="Capas dos materiais do kit">
+        <img class="c-left" src="img/capa-01.jpg" alt="Capa do Módulo 01 — Instagram e conteúdo">
+        <img class="c-right" src="img/capa-02.jpg" alt="Capa do Módulo 02 — Atendimento e WhatsApp">
+        <img class="c-front" src="img/capa-00.jpg" alt="Capa do Manual de início rápido">
+        <div class="fan-tag">8 módulos · manual · planilha · kit Word</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ============ DORES ============ -->
+<section>
+  <div class="wrap">
+    <div class="center">
+      <div class="eyebrow">Você se reconhece?</div>
+      <h2>Você manda bem no que faz.<br>O problema é tudo o que vem antes da cadeira.</h2>
+    </div>
+    <div class="pains">
+      <div class="pain"><svg><use href="#x"/></svg>Passa a noite olhando para o celular sem saber o que postar amanhã.</div>
+      <div class="pain"><svg><use href="#x"/></svg>A cliente pergunta "quanto custa?", recebe o preço… e some.</div>
+      <div class="pain"><svg><use href="#x"/></svg>Segunda e terça a agenda fica vazia, e sábado não dá conta.</div>
+      <div class="pain"><svg><use href="#x"/></svg>Aquela cliente fiel não aparece há meses, e você não sabe como chamar sem parecer chata.</div>
+      <div class="pain"><svg><use href="#x"/></svg>Fatura no mês, mas não sabe quanto sobrou nem se o preço cobre os custos.</div>
+      <div class="pain"><svg><use href="#x"/></svg>Já pensou em contratar agência, mas não cabe no orçamento.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VIRADA ============ -->
+<section class="soft">
+  <div class="wrap turn">
+    <div class="eyebrow">Não é falta de talento</div>
+    <h2>É falta de tempo — e de <em>um método simples</em> para usar a inteligência artificial a seu favor.</h2>
+    <p class="lead" style="margin:18px auto 0">O ChatGPT e o Gemini são gratuitos e escrevem muito bem. Mas, sem saber o que pedir, eles devolvem textos genéricos, inventam informações e não soam como você. O VENDAMAIS IA entrega os pedidos certos, prontos para copiar, escritos para a rotina de quem trabalha com beleza.</p>
+  </div>
+</section>
+
+<!-- ============ COMO FUNCIONA ============ -->
+<section>
+  <div class="wrap">
+    <div class="center">
+      <div class="eyebrow">Como funciona</div>
+      <h2>Copiar, trocar, colar. Pronto.</h2>
+      <p class="lead" style="margin-top:14px">Você não precisa entender de tecnologia nem de marketing.</p>
+    </div>
+    <div class="steps">
+      <div class="step"><b>1</b><h3>Escolha a situação</h3><p>"Cliente achou caro", "o que postar na sexta", "cliente sumiu há 60 dias"… Cada módulo tem um sumário para você achar o comando certo.</p></div>
+      <div class="step"><b>2</b><h3>Troque o que está entre colchetes</h3><p>Coloque o nome do seu serviço, seu preço e seus diferenciais verdadeiros.</p></div>
+      <div class="step"><b>3</b><h3>Cole no ChatGPT ou Gemini</h3><p>Em segundos, você tem a legenda, a mensagem ou a campanha. Revise e use.</p></div>
+    </div>
+    <div class="prompt">
+      <div class="lbl">Exemplo real — Módulo 02, Comando 17</div>
+      O cliente respondeu que achou o serviço caro.<br>
+      Serviço: <span class="ph">[SERVIÇO]</span>. Preço: <span class="ph">[PREÇO]</span>. Diferenciais reais: <span class="ph">[DIFERENCIAIS]</span>.<br>
+      Crie uma resposta educada que reconheça a preocupação com o orçamento e explique o valor oferecido.<br>
+      Não desmereça concorrentes, não pressione e não ofereça desconto automaticamente.
+    </div>
+  </div>
+</section>
+
+<!-- ============ ANTES E DEPOIS ============ -->
+<section class="soft">
+  <div class="wrap">
+    <div class="center">
+      <div class="eyebrow">A diferença na prática</div>
+      <h2>A mesma conversa. Outro resultado.</h2>
+      <p class="lead" style="margin-top:14px">Exemplos do Módulo 02 — Atendimento e WhatsApp.</p>
+    </div>
+    <div class="ba">
+      <div class="ba-row">
+        <div class="q"><svg width="18" height="18"><use href="#chat"/></svg>A cliente pergunta quanto custa a sobrancelha</div>
+        <div class="bubble bad"><small>Antes</small>"R$ 45."</div>
+        <div class="bubble good"><small>Depois</small>"Olá! O design de sobrancelhas custa R$ 45. É um prazer cuidar desse detalhe com você. Se quiser, posso consultar os horários disponíveis para esta semana. Prefere manhã ou tarde?"</div>
+      </div>
+      <div class="ba-row">
+        <div class="q"><svg width="18" height="18"><use href="#chat"/></svg>"Achei um pouco caro."</div>
+        <div class="bubble bad"><small>Antes</small>"Mas é o nosso preço. Se quiser, é esse."</div>
+        <div class="bubble good"><small>Depois</small>"Entendo perfeitamente! É importante escolher um serviço que faça sentido para você. Nosso atendimento inclui [seu diferencial real]. Se quiser, posso explicar melhor o que está incluído para você avaliar com tranquilidade."</div>
+      </div>
+      <div class="ba-row">
+        <div class="q"><svg width="18" height="18"><use href="#chat"/></svg>A cliente faltou no horário</div>
+        <div class="bubble bad"><small>Antes</small>"Você não veio. Quer remarcar?"</div>
+        <div class="bubble good"><small>Depois</small>"Olá! Sentimos sua falta no horário de hoje. Espero que esteja tudo bem. Se ainda tiver interesse, posso ajudar a encontrar uma nova data para seu atendimento."</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ O QUE RECEBE ============ -->
+<section id="conteudo">
+  <div class="wrap">
+    <div class="center">
+      <div class="eyebrow">O que você recebe</div>
+      <h2>8 módulos, um manual e dois bônus</h2>
+      <p class="lead" style="margin-top:14px">Tudo em arquivos para baixar e guardar: PDFs, uma planilha em Excel e documentos editáveis em Word.</p>
+    </div>
+    <div class="mods">
+      <div class="mod"><img src="img/capa-00.jpg" alt="" loading="lazy"><div><div class="n">Comece aqui</div><h3>Manual de início rápido</h3><p>Como usar o kit em 15 minutos.</p></div></div>
+      <div class="mod"><img src="img/capa-01.jpg" alt="" loading="lazy"><div><div class="n">Módulo 01</div><h3>Instagram e conteúdo</h3><p>Legendas, Stories, Reels e campanhas.</p><span class="pill">25 comandos</span></div></div>
+      <div class="mod"><img src="img/capa-02.jpg" alt="" loading="lazy"><div><div class="n">Módulo 02</div><h3>Atendimento e WhatsApp</h3><p>Do primeiro "oi" ao pós-atendimento.</p><span class="pill">65 comandos</span></div></div>
+      <div class="mod"><img src="img/capa-03.jpg" alt="" loading="lazy"><div><div class="n">Módulo 03</div><h3>Vendas e conversão</h3><p>Apresentar, ofertar e fechar sem pressão.</p><span class="pill">30 comandos</span></div></div>
+      <div class="mod"><img src="img/capa-04.jpg" alt="" loading="lazy"><div><div class="n">Módulo 04</div><h3>Fidelização e reativação</h3><p>Faça a cliente voltar e indicar.</p><span class="pill">30 ferramentas</span></div></div>
+      <div class="mod"><img src="img/capa-05.jpg" alt="" loading="lazy"><div><div class="n">Módulo 05</div><h3>Gestão e organização</h3><p>Rotina, metas, preço e finanças.</p><span class="pill">30 ferramentas</span></div></div>
+      <div class="mod"><img src="img/capa-06.jpg" alt="" loading="lazy"><div><div class="n">Módulo 06</div><h3>Campanhas prontas</h3><p>Datas, dias fracos, indicação e mais.</p><span class="pill">30 campanhas</span></div></div>
+      <div class="mod"><img src="img/capa-07.jpg" alt="" loading="lazy"><div><div class="n">Módulo 07</div><h3>Templates editáveis</h3><p>Controles, mensagens e posts — também em Word.</p><span class="pill">40 templates</span></div></div>
+      <div class="mod"><img src="img/capa-08.jpg" alt="" loading="lazy"><div><div class="n">Módulo 08</div><h3>Implementação em 30 dias</h3><p>O passo a passo diário.</p><span class="pill">15 a 30 min/dia</span></div></div>
+    </div>
+    <div class="bonus">
+      <div class="bon"><span class="tag">Bônus 1</span><h3>Planilha de Gestão (Excel)</h3><p>Painel automático com faturamento, despesas, ticket médio, conversão e gráfico mensal; alerta de clientes para reativar; calendário editorial; controle de campanhas e simulador de preço.</p></div>
+      <div class="bon"><span class="tag">Bônus 2</span><h3>Kit de Aplicação (Word)</h3><p>20 modelos de mensagens para Instagram e WhatsApp, checklist de publicação, rotina semanal de 30 minutos e o prompt mestre para adaptar qualquer material.</p></div>
+    </div>
+    <div class="totals"><span>+ de 220 comandos prontos</span><span>163 páginas</span><span>30 campanhas</span><span>40 templates</span><span>Plano de 30 dias</span></div>
+  </div>
+</section>
+
+<!-- ============ POR DENTRO ============ -->
+<section class="soft">
+  <div class="wrap">
+    <div class="center">
+      <div class="eyebrow">Veja por dentro</div>
+      <h2>Páginas reais do material</h2>
+      <p class="lead" style="margin-top:14px">Cada comando vem num quadro pronto para copiar, com os campos que você troca destacados.</p>
+    </div>
+    <div class="inside">
+      <figure><img src="img/pag-01-3.jpg" alt="Página do Módulo 01 com comandos de estratégia de conteúdo" loading="lazy"><figcaption>Módulo 01 — comandos de estratégia de conteúdo</figcaption></figure>
+      <figure><img src="img/pag-02-13.jpg" alt="Página do Módulo 02 com comandos de agendamento" loading="lazy"><figcaption>Módulo 02 — conversas que viram agendamento</figcaption></figure>
+      <figure><img src="img/pag-07-10.jpg" alt="Página do Módulo 07 com templates de fidelização" loading="lazy"><figcaption>Módulo 07 — templates de fidelização</figcaption></figure>
+    </div>
+    <figure class="sheet">
+      <img src="img/planilha-painel.jpg" alt="Painel da Planilha de Gestão com indicadores e gráfico mensal" loading="lazy">
+      <figcaption>Planilha de Gestão — aba Painel. <b>Dados meramente ilustrativos</b>; na sua cópia, os números são os que você registrar.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ PLANO ============ -->
+<section class="dark">
+  <div class="wrap">
+    <div class="center">
+      <div class="eyebrow">Plano de implementação</div>
+      <h2>Em 30 dias, uma rotina que funciona</h2>
+      <p class="lead" style="margin-top:14px">O Módulo 08 diz exatamente o que fazer em cada dia, e qual comando usar. De 15 a 30 minutos por dia.</p>
+    </div>
+    <div class="weeks">
+      <div class="week"><small>Semana 1</small><h3>Organize a casa</h3><p>Diagnóstico, ficha do negócio, cliente ideal, catálogo, diferenciais e perfil do Instagram.</p></div>
+      <div class="week"><small>Semana 2</small><h3>Apareça</h3><p>Estratégia de conteúdo, posts, Stories, roteiro de Reels e a primeira campanha.</p></div>
+      <div class="week"><small>Semana 3</small><h3>Atenda e venda</h3><p>Respostas rápidas, roteiro de atendimento, objeções, apresentação e oferta.</p></div>
+      <div class="week"><small>Semana 4</small><h3>Fidelize e organize</h3><p>Pós-venda, reativação, indicação, indicadores, preços e plano de 90 dias.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PARA QUEM ============ -->
+<section>
+  <div class="wrap">
+    <div class="center">
+      <div class="eyebrow">Para quem é</div>
+      <h2>Feito para quem vive de beleza</h2>
+    </div>
+    <div class="fit">
+      <div class="yes"><h3>É para você se…</h3><ul>
+        <li>Você tem salão, barbearia, espaço de estética, ou atende como manicure, designer de sobrancelhas ou autônoma da beleza.</li>
+        <li>Faz o próprio marketing no Instagram e atende pelo WhatsApp.</li>
+        <li>Quer usar IA gratuita sem complicação.</li>
+        <li>Consegue reservar de 15 a 30 minutos por dia.</li>
+      </ul></div>
+      <div class="no"><h3>Não é para você se…</h3><ul>
+        <li>Procura um software que faça tudo sozinho.</li>
+        <li>Quer um curso em vídeo.</li>
+        <li>Espera garantia de faturamento. Resultado depende da execução, da sua oferta, do seu mercado e do seu atendimento.</li>
+      </ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OFERTA ============ -->
+<section id="oferta" class="dark">
+  <div class="wrap center">
+    <div class="eyebrow">Oferta de lançamento</div>
+    <h2>Tudo o que você precisa para começar hoje</h2>
+    <div class="offer">
+      <ul>
+        <li><svg><use href="#check"/></svg><span><b>Manual de início rápido</b> + <b>8 módulos</b> em PDF (163 páginas)</span></li>
+        <li><svg><use href="#check"/></svg><span><b>+ de 220 comandos</b> prontos para ChatGPT e Gemini</span></li>
+        <li><svg><use href="#check"/></svg><span><b>30 campanhas</b> e <b>40 templates</b> editáveis</span></li>
+        <li><svg><use href="#check"/></svg><span><b>Plano de implementação de 30 dias</b></span></li>
+        <li><svg><use href="#check"/></svg><span><b>Bônus:</b> Planilha de Gestão com painel automático (Excel)</span></li>
+        <li><svg><use href="#check"/></svg><span><b>Bônus:</b> Kit de Aplicação com 20 modelos de mensagens (Word)</span></li>
+      </ul>
+      <div class="price">
+        <div class="val"><small>R$</small>67</div>
+        <div class="inst">pagamento único · Pix ou cartão</div>
+      </div>
+      <a class="btn cta" href="#oferta">Quero o VENDAMAIS IA <svg><use href="#arrow"/></svg></a>
+      <div class="seals">
+        <span><svg><use href="#lock"/></svg>Pagamento seguro</span>
+        <span><svg><use href="#down"/></svg>Download imediato</span>
+        <span><svg><use href="#shield"/></svg>7 dias de garantia</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GARANTIA ============ -->
+<section>
+  <div class="wrap">
+    <div class="guar">
+      <div class="seal"><div><b>7</b><span>dias de<br>garantia</span></div></div>
+      <div>
+        <h3>Teste com calma. O risco é nosso.</h3>
+        <p>Baixe tudo, leia o Manual, use os comandos. Se em até 7 dias você achar que o VENDAMAIS IA não é para você, peça o reembolso pela plataforma de pagamento e receba 100% do valor de volta, sem precisar explicar o motivo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="soft">
+  <div class="wrap">
+    <div class="center"><div class="eyebrow">Dúvidas</div><h2>Perguntas frequentes</h2></div>
+    <div class="faq">
+      <details><summary>Preciso pagar pelo ChatGPT ou pelo Gemini?</summary><p>Não. Todos os comandos foram pensados para as versões gratuitas. As versões pagas podem dar respostas mais elaboradas, mas não são necessárias.</p></details>
+      <details><summary>Preciso entender de tecnologia ou de marketing?</summary><p>Não. É copiar o comando, trocar o que está entre colchetes pelas informações do seu negócio e colar na IA. O Manual de início rápido mostra o passo a passo com um exemplo.</p></details>
+      <details><summary>Como e quando recebo o material?</summary><p>Logo após a confirmação do pagamento, você recebe o acesso para baixar todos os arquivos. No Pix, a confirmação costuma ser imediata.</p></details>
+      <details><summary>Funciona no celular?</summary><p>Sim. Os PDFs abrem no celular, e você pode copiar os comandos direto deles. A planilha funciona melhor no computador, no Excel; no celular, pelo aplicativo do Excel.</p></details>
+      <details><summary>Serve para outro tipo de negócio?</summary><p>A maior parte dos comandos funciona para qualquer pequeno negócio, trocando as informações entre colchetes. Mas os exemplos e a linguagem foram feitos para quem trabalha com beleza.</p></details>
+      <details><summary>A IA não vai inventar coisas sobre o meu negócio?</summary><p>Os comandos já trazem instruções como "não invente preços, resultados ou diferenciais". Mesmo assim, a IA pode errar, por isso o kit ensina a revisar tudo antes de publicar ou enviar.</p></details>
+      <details><summary>Posso colocar dados das minhas clientes na IA?</summary><p>Não recomendamos. O kit orienta a usar apelidos ou códigos e a não colar nomes completos, telefones, fotos ou dados de saúde em ferramentas de IA.</p></details>
+      <details><summary>E se eu não gostar?</summary><p>Você tem 7 dias de garantia. Peça o cancelamento e o reembolso pela própria plataforma de pagamento, dentro desse prazo, e receba o valor integral.</p></details>
+      <details><summary>O kit garante que vou vender mais?</summary><p>Não. O VENDAMAIS IA é um material educativo e prático. Ele organiza e acelera o seu marketing e o seu atendimento, mas os resultados dependem da execução, da qualidade dos seus serviços, do seu mercado e de outros fatores do seu negócio.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA FINAL ============ -->
+<section class="dark center">
+  <div class="wrap">
+    <h2>Seu pequeno negócio, com inteligência de gente grande.</h2>
+    <p class="lead" style="margin:16px auto 28px">Comece hoje: 15 minutos com o Manual e você já sai com a primeira legenda pronta.</p>
+    <a class="btn cta" href="#oferta">Quero o VENDAMAIS IA por R$ 67 <svg><use href="#arrow"/></svg></a>
+    <div class="btn-note">7 dias de garantia · download imediato</div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="brand"><svg><use href="#logo"/></svg>VENDAMAIS <span>IA</span></div>
+    <p>Material educativo. Não há promessa de vendas, faturamento ou resultados. A inteligência artificial pode errar: revise tudo antes de publicar ou enviar. Os dados exibidos na imagem da planilha são meramente ilustrativos.</p>
+    <p>ChatGPT é marca da OpenAI e Gemini é marca do Google. O VENDAMAIS IA não tem vínculo com essas empresas.</p>
+    <nav><a href="#">Termos de uso</a><a href="#">Política de privacidade</a></nav>
+    <p>© <span id="ano"></span> Vendamais IA. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<div class="sticky" id="sticky">
+  <div class="p">R$ 67<small>7 dias de garantia</small></div>
+  <a class="btn cta" href="#oferta">Quero agora <svg><use href="#arrow"/></svg></a>
+</div>
+
+<script>
+  // ===== Configuração =====
+  // Cole aqui o link do checkout (Hotmart, Kiwify etc.). Enquanto estiver vazio,
+  // os botões rolam até a seção de oferta.
+  var CHECKOUT_URL = '';
+
+  if (CHECKOUT_URL) {
+    document.querySelectorAll('a.cta').forEach(function (a) {
+      a.href = CHECKOUT_URL + (location.search || ''); // repassa UTMs do anúncio ao checkout
+    });
+  }
+  document.getElementById('ano').textContent = new Date().getFullYear();
+
+  // barra fixa: aparece depois do topo e some na seção de oferta
+  var sticky = document.getElementById('sticky');
+  var hero = document.querySelector('header');
+  var oferta = document.getElementById('oferta');
+  var heroOut = false, offerIn = false;
+  function upd() { sticky.classList.toggle('show', heroOut && !offerIn); }
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(function (e) { heroOut = !e[0].isIntersecting; upd(); }).observe(hero);
+    new IntersectionObserver(function (e) { offerIn = e[0].isIntersecting; upd(); }, { threshold: .2 }).observe(oferta);
+  }
+</script>
+</body>
+</html>

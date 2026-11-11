@@ -1,0 +1,8 @@
+node_modules/
+build/
+preview/
+planilha/teste.xlsx
+oferta/assets/*.html
+*.tmp
+~$*
+entrega/

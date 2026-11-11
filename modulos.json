@@ -1,0 +1,99 @@
+[
+  {
+    "id": "modulo-01",
+    "num": "01",
+    "title": "Instagram e produção de conteúdo",
+    "subtitle": "Biblioteca de comandos de marketing para negócios de beleza",
+    "count": "25 comandos prontos",
+    "disclaimer": "Material educacional. Revise os conteúdos gerados antes de publicar e confirme a exatidão das informações comerciais e técnicas."
+  },
+  {
+    "id": "modulo-02",
+    "num": "02",
+    "title": "Atendimento e WhatsApp",
+    "subtitle": "Do primeiro contato ao agendamento",
+    "count": "65 ferramentas práticas",
+    "disclaimer": "Material educacional. As mensagens devem ser adaptadas às políticas reais do estabelecimento, às condições comerciais e às características de cada atendimento."
+  },
+  {
+    "id": "modulo-03",
+    "num": "03",
+    "title": "Vendas e conversão",
+    "subtitle": "Do interesse à contratação",
+    "count": "30 ferramentas práticas",
+    "disclaimer": "Material educacional. As estratégias devem ser adaptadas à realidade do estabelecimento. A IA não substitui a análise financeira, a avaliação técnica dos serviços ou o julgamento do responsável pelo negócio."
+  },
+  {
+    "id": "modulo-04",
+    "num": "04",
+    "title": "Fidelização e reativação de clientes",
+    "subtitle": "Faça o cliente voltar — sem pressão",
+    "count": "30 ferramentas práticas",
+    "disclaimer": "Material educacional. Respeite a LGPD, a finalidade de coleta dos contatos e os pedidos de descadastramento antes de executar qualquer campanha."
+  },
+  {
+    "id": "modulo-05",
+    "num": "05",
+    "title": "Gestão e organização do pequeno negócio",
+    "subtitle": "Rotina, metas, finanças, estoque e equipe",
+    "count": "30 ferramentas práticas",
+    "disclaimer": "Material educacional. A IA ajuda a organizar e calcular, mas não substitui a conferência dos dados, a contabilidade ou a orientação de profissionais habilitados."
+  },
+  {
+    "id": "modulo-06",
+    "num": "06",
+    "title": "Campanhas prontas para vender",
+    "subtitle": "Transforme ideias em campanhas comerciais",
+    "count": "30 campanhas + 6 modelos",
+    "disclaimer": "Material educacional. Nunca anuncie condições que não possa cumprir e respeite as normas publicitárias e profissionais do seu setor."
+  },
+  {
+    "id": "modulo-07",
+    "num": "07",
+    "title": "Biblioteca de templates editáveis",
+    "subtitle": "Modelos para organizar, divulgar, vender e fidelizar",
+    "count": "40 templates",
+    "disclaimer": "Material educacional. Registre apenas os dados necessários e não insira dados pessoais de clientes em ferramentas públicas de IA."
+  },
+  {
+    "id": "modulo-08",
+    "num": "08",
+    "title": "Implementação em 30 dias",
+    "subtitle": "Um plano prático para transformar a rotina do seu negócio",
+    "count": "30 dias · 15 a 30 minutos por dia",
+    "disclaimer": "Material educacional. A IA pode errar; confira preços, cálculos, datas e informações antes de utilizar. Não há promessa de faturamento ou vendas."
+  },
+  {
+    "id": "manual",
+    "num": "00",
+    "kicker": "Comece por aqui",
+    "title": "Manual de início rápido",
+    "subtitle": "Como usar o VENDAMAIS IA com ChatGPT e Gemini",
+    "count": "Leitura de 15 minutos",
+    "disclaimer": "Material educacional. A IA pode produzir informações incorretas; revise tudo antes de publicar ou enviar."
+  },
+  {
+    "id": "kit-aplicacao",
+    "num": "00",
+    "formato": "word",
+    "kicker": "Bônus · Arquivo editável",
+    "title": "Kit de Aplicação",
+    "subtitle": "20 modelos de mensagens para Instagram e WhatsApp, checklist, rotina semanal, prompt mestre e plano de 7 dias",
+    "count": "Documento Word editável",
+    "source": "kit-aplicacao",
+    "arquivo": "VENDAMAIS_IA_Bonus_Kit_de_Aplicacao.docx",
+    "disclaimer": "Material educacional. Revise tudo antes de publicar ou enviar."
+  },
+  {
+    "id": "templates-editaveis",
+    "num": "00",
+    "formato": "word",
+    "kicker": "Módulo 07 · Arquivo editável",
+    "title": "40 templates editáveis",
+    "subtitle": "Controles, roteiros, mensagens e modelos de publicação para preencher e reutilizar",
+    "count": "Documento Word editável",
+    "source": "modulo-07",
+    "arquivo": "VENDAMAIS_IA_Modulo_07_Templates_Editaveis.docx",
+    "disclaimer": "Material educacional. Registre apenas os dados necessários e não insira dados pessoais de clientes em ferramentas públicas de IA."
+  }
+]

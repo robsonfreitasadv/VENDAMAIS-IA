@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Compra confirmada — VENDAMAIS IA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<!-- Evento de compra do pixel: configurar na plataforma de pagamento. -->
+<style>
+:root{--navy:#17283B;--navy-2:#0F1C2B;--champ:#D9BFA2;--champ-ink:#8A6B47;--rosa:#EBCFD1;--off:#F7F3ED;--line:#E6DED3;--muted:#5B6670;--ok:#2E7D5B}
+*{box-sizing:border-box}
+body{margin:0;font-family:Montserrat,system-ui,sans-serif;color:#1F2933;background:var(--off);line-height:1.6;font-size:17px}
+header{background:radial-gradient(900px 500px at 80% 0%,#2A4560 0%,var(--navy) 55%,var(--navy-2) 100%);color:#fff;text-align:center;padding:48px 16px 64px}
+.brand{display:inline-flex;align-items:center;gap:10px;font-weight:800;font-size:20px;letter-spacing:.02em}
+.brand svg{width:34px;height:34px}.brand span{color:var(--champ)}
+.ok{width:72px;height:72px;border-radius:50%;background:var(--ok);display:grid;place-items:center;margin:28px auto 18px}
+.ok svg{width:36px;height:36px}
+h1{font-family:'Playfair Display',serif;font-size:clamp(30px,5vw,44px);margin:0 0 10px;line-height:1.15}
+header p{color:#C9D3DD;max-width:620px;margin:0 auto}
+main{max-width:760px;margin:-32px auto 0;padding:0 16px 56px}
+.card{background:#fff;border:1px solid var(--line);border-radius:28px;padding:28px;margin-bottom:18px}
+.card h2{font-size:20px;margin:0 0 14px;color:var(--navy)}
+ol{margin:0;padding:0;list-style:none;counter-reset:s}
+ol li{counter-increment:s;position:relative;padding:0 0 16px 50px}
+ol li::before{content:counter(s);position:absolute;left:0;top:-2px;width:34px;height:34px;border-radius:50%;background:var(--navy);color:var(--champ);display:grid;place-items:center;font-weight:800}
+ol li b{color:var(--navy)}
+.note{font-size:15px;color:var(--muted)}
+.mail{display:flex;gap:14px;align-items:flex-start}
+.mail svg{flex:none;width:28px;height:28px;color:var(--champ-ink)}
+footer{text-align:center;font-size:13px;color:var(--muted);padding:0 16px 40px}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand"><svg viewBox="0 0 64 64"><rect x="6" y="40" width="9" height="18" rx="2" fill="#D9BFA2"/><rect x="20" y="31" width="9" height="27" rx="2" fill="#D9BFA2"/><rect x="34" y="22" width="9" height="36" rx="2" fill="#D9BFA2"/><rect x="48" y="12" width="9" height="46" rx="2" fill="#D9BFA2"/><path d="M6 30 L24 16 L34 22 L54 5" fill="none" stroke="#EBCFD1" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg>VENDAMAIS <span>IA</span></div>
+  <div class="ok"><svg viewBox="0 0 24 24"><path d="m6 12.5 4 4 8-9" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+  <h1>Compra confirmada. Boas-vindas!</h1>
+  <p>Seu VENDAMAIS IA já está liberado. Veja como começar nos próximos 15 minutos.</p>
+</header>
+<main>
+  <div class="card">
+    <h2>Seus próximos passos</h2>
+    <ol>
+      <li><b>Abra o e-mail de acesso</b> enviado pela plataforma de pagamento (confira também a caixa de spam e promoções). Por ele você baixa todos os arquivos.</li>
+      <li><b>Comece pelo "00 — Manual de início rápido".</b> Em 15 minutos você entende como usar os comandos.</li>
+      <li><b>Preencha a ficha do seu negócio</b> (Passo 2 do Manual) e guarde no bloco de notas do celular.</li>
+      <li><b>Amanhã, siga o Dia 01</b> do Módulo 08 — Implementação em 30 dias.</li>
+      <li><b>Abra a Planilha de Gestão no computador</b> e registre suas vendas e despesas da semana.</li>
+    </ol>
+    <p class="note">Dica: salve os PDFs no celular. Assim você copia os comandos a qualquer momento, até entre um atendimento e outro.</p>
+  </div>
+  <div class="card mail">
+    <svg viewBox="0 0 24 24"><path d="M12 3.5 19 6v5.5c0 4.3-3 7.6-7 9-4-1.4-7-4.7-7-9V6z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 12l2.2 2.2L15.5 10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <div><h2 style="margin-bottom:6px">Garantia de 7 dias</h2><p class="note" style="margin:0">Se decidir que o VENDAMAIS IA não é para você, peça o cancelamento e o reembolso diretamente na plataforma onde fez a compra, em até 7 dias.</p></div>
+  </div>
+</main>
+<footer>VENDAMAIS IA — Seu pequeno negócio, com inteligência de gente grande.<br>Material educativo, sem promessa de resultados.</footer>
+</body>
+</html>
