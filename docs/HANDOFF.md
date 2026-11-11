@@ -15,6 +15,10 @@ Atualizado em 11/11/2026. Leia junto com `CLAUDE.md`, `oferta/OFERTA.md` e `ofer
 | Página de vendas e de obrigado (imagens embutidas) | `pagina/index.html`, `pagina/obrigado.html` (fonte: `pagina/fonte-*.html`) |
 | 10 criativos de anúncio + copy e estrutura de campanha | `anuncios/out/`, `anuncios/ANUNCIOS.md` |
 
+## Cópia no Google Drive (11/11/2026)
+
+O GitHub (`robsonfreitasadv/vendamais-ia`) ainda não recebeu o envio: o push respondeu "Repository not found" (provável credencial sem acesso ao repositório novo). Enquanto isso, o projeto está no Drive, pasta **VENDAMAIS IA**: https://drive.google.com/drive/folders/1AQiRhXeQ4FJS30Zq_1eZbkhwcsBSOM3J — 5 ZIPs (limite de 10 MB por envio) para extrair todos em `C:\Users\robson.freitas\`, mais `LEIA-ME_COMO_USAR_NO_NOTEBOOK.txt`. A cópia não leva a pasta `.git`.
+
 ## Decisões do dono (não reverter)
 
 - Público: negócios de beleza. Marca: "VENDAMAIS IA". Preço de teste: R$ 67.
