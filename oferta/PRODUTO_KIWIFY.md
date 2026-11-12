@@ -39,7 +39,7 @@ Kit digital para salões, barbearias, estética, manicures, designers de sobranc
 
 **Garantia de 7 dias:** se não for para você, peça o reembolso integral pela plataforma.
 
-Material educativo. Não há promessa de vendas, faturamento ou resultados. A IA pode errar: revise tudo antes de publicar. ChatGPT é marca da OpenAI e Gemini é marca do Google; o VENDAMAIS IA não tem vínculo com essas empresas. Não inclui suporte individual.
+Material educativo. Não há promessa de vendas, faturamento ou resultados. A IA pode errar: revise tudo antes de publicar. ChatGPT é marca da OpenAI e Gemini é marca do Google; o VENDAMAIS IA não tem vínculo com essas empresas.
 
 ## 4. Entrega
 
