@@ -9,3 +9,4 @@ entrega/
 .venv/
 site/
 site.zip
+site_worker.js
