@@ -16,7 +16,7 @@ Kit digital para negócios de beleza: 8 módulos em PDF + Manual de início ráp
 
 ## Rotina e ambiente (desktop e notebook)
 
-- Repositório: GitHub privado `vendamais-ia`. Pasta local nos dois computadores: `C:\Users\robson.freitas\VENDAMAIS-IA`.
+- Repositório: GitHub privado https://github.com/robsonfreitasadv/VENDAMAIS-IA. Pasta local nos dois computadores: `C:\Users\robson.freitas\VENDAMAIS-IA`.
 - **Início de sessão:** `git pull` e ler `docs/HANDOFF.md`.
 - **Fim de cada conjunto de mudanças:** atualizar `docs/HANDOFF.md`, commit com mensagem clara e `git push`.
 - Primeira vez num computador: `npm install` (Node 18+), `python -m pip install pymupdf==1.24.10 openpyxl==3.1.5 python-docx==1.1.2` e Google Chrome em `C:/Program Files/Google/Chrome/Application/chrome.exe` (gera PDFs, capas, artes e criativos). Excel e Word só para conferir planilha e .docx.

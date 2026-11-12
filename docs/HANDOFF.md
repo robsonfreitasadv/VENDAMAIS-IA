@@ -1,6 +1,6 @@
 # VENDAMAIS IA — onde paramos (handoff)
 
-Atualizado em 11/11/2026. Leia junto com `CLAUDE.md`, `oferta/OFERTA.md` e `oferta/FUNIL.md`.
+Atualizado em 12/11/2026. Leia junto com `CLAUDE.md`, `oferta/OFERTA.md` e `oferta/FUNIL.md`.
 
 ## Pronto
 
@@ -15,9 +15,23 @@ Atualizado em 11/11/2026. Leia junto com `CLAUDE.md`, `oferta/OFERTA.md` e `ofer
 | Página de vendas e de obrigado (imagens embutidas) | `pagina/index.html`, `pagina/obrigado.html` (fonte: `pagina/fonte-*.html`) |
 | 10 criativos de anúncio + copy e estrutura de campanha | `anuncios/out/`, `anuncios/ANUNCIOS.md` |
 
-## Cópia no Google Drive (11/11/2026)
+## Sincronização entre dispositivos (12/11/2026)
 
-O GitHub (`robsonfreitasadv/vendamais-ia`) ainda não recebeu o envio: o push respondeu "Repository not found" (provável credencial sem acesso ao repositório novo). Enquanto isso, o projeto está no Drive, pasta **VENDAMAIS IA**: https://drive.google.com/drive/folders/1AQiRhXeQ4FJS30Zq_1eZbkhwcsBSOM3J — 5 ZIPs (limite de 10 MB por envio) para extrair todos em `C:\Users\robson.freitas\`, mais `LEIA-ME_COMO_USAR_NO_NOTEBOOK.txt`. A cópia não leva a pasta `.git`.
+O projeto está no GitHub privado: https://github.com/robsonfreitasadv/VENDAMAIS-IA (branch `main`). Essa é a fonte para todos os computadores; a cópia em ZIP no Google Drive (11/11) fica só como backup antigo e não deve ser editada.
+
+Primeira vez num computador novo:
+
+```
+cd C:\Users\robson.freitas
+git clone https://github.com/robsonfreitasadv/VENDAMAIS-IA.git
+cd VENDAMAIS-IA
+npm install
+python -m pip install pymupdf==1.24.10 openpyxl==3.1.5 python-docx==1.1.2
+```
+
+Se a pasta já existir por causa dos ZIPs do Drive, renomeie-a antes (ex.: `VENDAMAIS-IA-drive`) e clone de novo. `build/`, `entrega/` e `node_modules/` não vão para o git: gere de novo.
+
+Depois disso: `git pull` ao começar e `git push` ao terminar.
 
 ## Decisões do dono (não reverter)
 
