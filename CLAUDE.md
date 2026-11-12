@@ -37,7 +37,7 @@ Kit digital para negócios de beleza: 8 módulos em PDF + Manual de início ráp
 | `pagina/fonte-*.html` | Fonte da página de vendas e da de obrigado | `python embutir.py` → `pagina/index.html` e `obrigado.html` com imagens embutidas (manter abaixo de ~500 KB) |
 
 - **Não há suporte.** Não mencionar suporte em nenhum material. Só a garantia: cancelamento e reembolso em 7 dias, feitos pela plataforma de compra.
-- Rodapé da página de vendas: só "Vendamais IA", termos e privacidade. Sem CNPJ, endereço, contato ou e-mail (decisão do dono).
+- Rodapé da página de vendas: só "Vendamais IA", termos e privacidade. Sem CNPJ, endereço, contato ou e-mail (decisão do dono). Os dados do vendedor (R F Comércio e Representação Ltda.) ficam em `pagina/termos.html` e `pagina/privacidade.html`.
 - Link do checkout: `CHECKOUT_URL` em `pagina/fonte-index.html`.
 - Prévia local da página: servidor `pagina-vendas` em `.claude/launch.json` (porta 8090).
 - Sem Excel na nuvem: recalcular e conferir a planilha no Google Sheets (ou abrir com LibreOffice, se instalado).

@@ -14,6 +14,8 @@ Atualizado em 12/11/2026. Leia junto com `CLAUDE.md`, `oferta/OFERTA.md` e `ofer
 | Artes de venda (horizontal e feed) | `oferta/VENDAMAIS_IA_Arte_*.png` |
 | Página de vendas e de obrigado (imagens embutidas) | `pagina/index.html`, `pagina/obrigado.html` (fonte: `pagina/fonte-*.html`) |
 | 10 criativos de anúncio + copy e estrutura de campanha | `anuncios/out/`, `anuncios/ANUNCIOS.md` |
+| Termos de uso e política de privacidade (rascunho, com dados da R F Comércio e Representação Ltda.) | `pagina/termos.html`, `pagina/privacidade.html` (ligados no rodapé) |
+| Cadastro do produto na Kiwify (descrição, entrega, e-mail de acesso, o que não ativar) | `oferta/PRODUTO_KIWIFY.md` |
 
 ## Onde trabalhar (12/11/2026)
 
@@ -44,12 +46,15 @@ Se um dia voltar a usar um PC Windows: `git clone`, `npm ci`, `py -m pip install
 
 ## Pendente / próximos passos
 
-1. Escolher a plataforma (recomendação: Kiwify; confirmar taxas na página oficial).
-2. Criar o produto com garantia de 7 dias e subir o pacote (`python empacotar.py`).
-3. Colar o link do checkout em `CHECKOUT_URL` (`pagina/fonte-index.html`) e rodar `python embutir.py`.
-4. Domínio e hospedagem da página; termos de uso e política de privacidade (links estão `#`).
-5. Pixel da Meta e evento de compra; trocar `[URL]` nos anúncios.
-6. Compra-teste completa.
-7. Testar a planilha no Google Sheets e no celular; testar os .docx no Google Docs.
-8. Testar uma amostra de comandos no ChatGPT e no Gemini.
-9. Consultar "VENDAMAIS IA" no INPI.
+1. **CNAE da empresa (fiscal, antes da primeira venda):** a R F Comércio e Representação Ltda. (CNPJ 64.610.463/0001-58) tem CNAE de representação comercial e varejo de alimentos. Nenhum cobre venda de material educativo digital. Ver com o contador a inclusão do CNAE adequado, o enquadramento no Simples e a emissão de nota fiscal das vendas.
+2. **E-mail de contato** para termos, privacidade e Kiwify: criar um e-mail próprio do VENDAMAIS IA (o do cartão CNPJ é de outro negócio) e substituir `[E-MAIL]` em `pagina/termos.html` e `pagina/privacidade.html`.
+3. Consultar "VENDAMAIS IA" no INPI.
+4. Criar o produto na Kiwify seguindo `oferta/PRODUTO_KIWIFY.md` e subir o pacote (`.venv/bin/python empacotar.py` → `entrega/`).
+5. Colar o link do checkout em `CHECKOUT_URL` (`pagina/fonte-index.html`) e rodar `.venv/bin/python embutir.py`.
+6. Domínio e hospedagem; preencher `[NOME DO SERVIÇO]` na política de privacidade.
+7. Pixel da Meta e evento de compra; ao instalar, adicionar aviso de cookies na página e tirar os trechos amarelos da política. Trocar `[URL]` nos anúncios.
+8. Compra-teste completa (Pix) e teste de reembolso.
+9. Testar a planilha no Google Sheets e no celular; testar os .docx no Google Docs.
+10. Testar uma amostra de comandos no ChatGPT e no Gemini.
+
+Termos e política: trechos ainda em aberto aparecem destacados em amarelo (classe `pend`). Remover o destaque ao preencher. São rascunho; revisão jurídica final pelo dono.

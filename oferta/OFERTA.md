@@ -100,6 +100,7 @@ Mais de 220 comandos prontos para ChatGPT e Gemini, planilha de gestão e um pla
 - [x] Sem suporte; só cancelamento/reembolso em 7 dias pela plataforma.
 - [ ] Testar a planilha no Google Sheets e no celular.
 - [ ] Testar 10 comandos por módulo no ChatGPT e no Gemini.
-- [ ] Escolher a plataforma (Hotmart, Kiwify, Eduzz) e configurar entrega + garantia.
+- [ ] Plataforma: Kiwify (12/11/2026). Configurar entrega + garantia conforme `oferta/PRODUTO_KIWIFY.md`.
+- [ ] Incluir CNAE de venda de material educativo digital no CNPJ (ver com o contador).
 - [ ] Página de vendas a partir desta ficha.
 - [ ] Compra-teste completa.

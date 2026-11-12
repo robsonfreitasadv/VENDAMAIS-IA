@@ -110,8 +110,8 @@ Ordem de seções mais recomendada pelas fontes (título → problema → agita�
 - [ ] Escolher plataforma (Hotmart ou Kiwify) e criar o produto com preço, garantia de 7 dias e entrega dos arquivos.
 - [ ] Trocar `CHECKOUT_URL` em `pagina/index.html` pelo link do checkout.
 - [ ] Domínio; publicar a página (hospedagem estática simples, ex.: Netlify ou Cloudflare Pages).
-- [ ] Termos de uso e política de privacidade (links no rodapé estão como `#`).
-- [x] Rodapé: nome "Vendamais IA", sem CNPJ, endereço ou contato (decisão do dono, 11/11/2026). Os dados do vendedor ficam no checkout da plataforma.
+- [x] Termos de uso e política de privacidade: `pagina/termos.html` e `pagina/privacidade.html` (falta o e-mail de contato e os dados de hospedagem/pixel).
+- [x] Rodapé: nome "Vendamais IA", sem CNPJ, endereço ou contato (decisão do dono, 11/11/2026). Os dados do vendedor ficam no checkout da plataforma e nos termos de uso (exigência do Decreto 7.962/2013).
 - [ ] Pixel da Meta e evento de compra (configurar na plataforma).
 - [ ] Gravar os 5 criativos.
 
