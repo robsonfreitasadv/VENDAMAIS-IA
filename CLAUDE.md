@@ -14,13 +14,14 @@ Kit digital para negócios de beleza: 8 módulos em PDF + Manual de início ráp
 - Imagens de divulgação só com material real do kit (capas, páginas, planilha). Dados da planilha nas imagens são ilustrativos e rotulados assim.
 - Marca sempre "VENDAMAIS IA". Público: negócios de beleza. Linguagem neutra em gênero quando falar com a cliente.
 
-## Rotina e ambiente (desktop e notebook)
+## Rotina e ambiente (Claude Code na nuvem)
 
-- Repositório: GitHub privado https://github.com/robsonfreitasadv/VENDAMAIS-IA. Pasta local nos dois computadores: `C:\Users\robson.freitas\VENDAMAIS-IA`.
-- **Início de sessão:** `git pull` e ler `docs/HANDOFF.md`.
-- **Fim de cada conjunto de mudanças:** atualizar `docs/HANDOFF.md`, commit com mensagem clara e `git push`.
-- Primeira vez num computador: `npm install` (Node 18+), `python -m pip install pymupdf==1.24.10 openpyxl==3.1.5 python-docx==1.1.2` e Google Chrome em `C:/Program Files/Google/Chrome/Application/chrome.exe` (gera PDFs, capas, artes e criativos). Excel e Word só para conferir planilha e .docx.
-- `build/`, `entrega/` e `node_modules/` não vão para o git: são gerados.
+- Repositório: GitHub privado https://github.com/robsonfreitasadv/VENDAMAIS-IA, branch `main`. Desde 12/11/2026 o trabalho é só no Claude Code na nuvem; os PCs Windows não são mais usados.
+- **Início de sessão:** `git pull`, ler `docs/HANDOFF.md` e, se faltar, `npm ci` e `uv venv -p 3.12 .venv && uv pip install -p .venv -r requirements.txt`.
+- **Fim de cada conjunto de mudanças:** atualizar `docs/HANDOFF.md`, commit com mensagem clara e `git push`. A sessão é temporária: o que não for enviado se perde.
+- Python: sempre `.venv/bin/python` (PyMuPDF 1.24.10 exige Python 3.12). Os comandos `python ...` da tabela abaixo significam `.venv/bin/python ...`.
+- Navegador: `chrome.mjs` (Chromium em `/opt/pw-browsers/chromium` no Linux; `CHROME_PATH` para outro). Não há Excel nem Word: conferir planilha e .docx no Google Sheets/Docs.
+- `build/`, `entrega/`, `node_modules/` e `.venv/` não vão para o git: são gerados.
 
 ## Estrutura e comandos
 
@@ -39,4 +40,4 @@ Kit digital para negócios de beleza: 8 módulos em PDF + Manual de início ráp
 - Rodapé da página de vendas: só "Vendamais IA", termos e privacidade. Sem CNPJ, endereço, contato ou e-mail (decisão do dono).
 - Link do checkout: `CHECKOUT_URL` em `pagina/fonte-index.html`.
 - Prévia local da página: servidor `pagina-vendas` em `.claude/launch.json` (porta 8090).
-- Excel 2013 está instalado: use-o via COM para recalcular e conferir a planilha.
+- Sem Excel na nuvem: recalcular e conferir a planilha no Google Sheets (ou abrir com LibreOffice, se instalado).

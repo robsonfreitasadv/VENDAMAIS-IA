@@ -15,23 +15,25 @@ Atualizado em 12/11/2026. Leia junto com `CLAUDE.md`, `oferta/OFERTA.md` e `ofer
 | Página de vendas e de obrigado (imagens embutidas) | `pagina/index.html`, `pagina/obrigado.html` (fonte: `pagina/fonte-*.html`) |
 | 10 criativos de anúncio + copy e estrutura de campanha | `anuncios/out/`, `anuncios/ANUNCIOS.md` |
 
-## Sincronização entre dispositivos (12/11/2026)
+## Onde trabalhar (12/11/2026)
 
-O projeto está no GitHub privado: https://github.com/robsonfreitasadv/VENDAMAIS-IA (branch `main`). Essa é a fonte para todos os computadores; a cópia em ZIP no Google Drive (11/11) fica só como backup antigo e não deve ser editada.
+A partir de 12/11/2026 o projeto é trabalhado **só no Claude Code na nuvem** (claude.ai/code), com este repositório. O GitHub privado https://github.com/robsonfreitasadv/VENDAMAIS-IA (branch `main`) é a única fonte. Os PCs Windows e a cópia ZIP no Google Drive (11/11) ficam como backup antigo; não editar.
 
-Primeira vez num computador novo:
+A sessão na nuvem é temporária: **tudo o que não estiver commitado e enviado (`git push`) se perde** quando ela é encerrada.
+
+Preparar a sessão (se o ambiente não tiver script de configuração):
 
 ```
-cd C:\Users\robson.freitas
-git clone https://github.com/robsonfreitasadv/VENDAMAIS-IA.git
-cd VENDAMAIS-IA
-npm install
-python -m pip install pymupdf==1.24.10 openpyxl==3.1.5 python-docx==1.1.2
+npm ci
+uv venv -p 3.12 .venv && uv pip install -p .venv -r requirements.txt
 ```
 
-Se a pasta já existir por causa dos ZIPs do Drive, renomeie-a antes (ex.: `VENDAMAIS-IA-drive`) e clone de novo. `build/`, `entrega/` e `node_modules/` não vão para o git: gere de novo.
+- Python: use `.venv/bin/python` (ex.: `.venv/bin/python juntar.py`). O PyMuPDF 1.24.10 não instala no Python 3.13; por isso o ambiente virtual em 3.12.
+- Chrome: `chrome.mjs` escolhe o navegador. No Linux usa o Chromium em `/opt/pw-browsers/chromium`; no Windows, o Chrome instalado. Outro caminho: variável `CHROME_PATH`.
+- Testado na nuvem em 12/11: `node build.mjs manual kit-aplicacao templates-editaveis`, `juntar.py` e `gerar_word.py` rodaram; página do Manual comparada com a original: idêntica.
+- Sem Excel/Word na nuvem: a conferência da planilha e dos .docx passa a ser no Google Sheets/Docs ou no celular.
 
-Depois disso: `git pull` ao começar e `git push` ao terminar.
+Se um dia voltar a usar um PC Windows: `git clone`, `npm ci`, `py -m pip install -r requirements.txt`.
 
 ## Decisões do dono (não reverter)
 

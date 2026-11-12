@@ -4,6 +4,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import puppeteer from 'puppeteer-core';
+import { CHROME, CHROME_ARGS } from '../chrome.mjs';
 
 const DIR = path.dirname(new URL(import.meta.url).pathname).replace(/^\/([A-Z]:)/, '$1');
 const IMG = (f) => 'file:///' + path.join(DIR, 'img', f).replace(/\\/g, '/');
@@ -284,7 +285,7 @@ const CA = {
 };
 
 // ------------------------------------------------------------- render
-const browser = await puppeteer.launch({ executablePath: 'C:/Program Files/Google/Chrome/Application/chrome.exe', headless: true, args: ['--allow-file-access-from-files'] });
+const browser = await puppeteer.launch({ executablePath: CHROME, headless: true, args: [...CHROME_ARGS, '--allow-file-access-from-files'] });
 const pg = await browser.newPage();
 async function shot(name, w, h, html) {
   const file = path.join(OUT, '_tmp.html');

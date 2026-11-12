@@ -4,9 +4,9 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { marked } from 'marked';
 import puppeteer from 'puppeteer-core';
+import { CHROME, CHROME_ARGS } from './chrome.mjs';
 
 const ROOT = path.dirname(new URL(import.meta.url).pathname).replace(/^\/([A-Z]:)/, '$1');
-const CHROME = 'C:/Program Files/Google/Chrome/Application/chrome.exe';
 const mods = JSON.parse(fs.readFileSync(path.join(ROOT, 'modulos.json'), 'utf8'));
 const css = fs.readFileSync(path.join(ROOT, 'estilo.css'), 'utf8');
 const only = process.argv.slice(2);
@@ -126,7 +126,8 @@ ${closing}
 const footer = (m) => `<div style="width:100%;font-family:Arial,sans-serif;font-size:7pt;color:#8A6B47;padding:0 17mm;display:flex;justify-content:space-between;">
 <span><b style="color:#17283B">VENDAMAIS IA</b> &nbsp;·&nbsp; ${m.num === '00' ? '' : 'Módulo ' + m.num + ' — '}${esc(m.title)}</span><span class="pageNumber"></span></div>`;
 
-const browser = await puppeteer.launch({ executablePath: CHROME, headless: true });
+fs.mkdirSync(path.join(ROOT, 'build'), { recursive: true });
+const browser = await puppeteer.launch({ executablePath: CHROME, headless: true, args: CHROME_ARGS });
 const page = await browser.newPage();
 for (const m of mods) {
   if (only.length && !only.includes(m.id)) continue;

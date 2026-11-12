@@ -3,6 +3,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import puppeteer from 'puppeteer-core';
+import { CHROME, CHROME_ARGS } from '../chrome.mjs';
 
 const DIR = path.dirname(new URL(import.meta.url).pathname).replace(/^\/([A-Z]:)/, '$1');
 const A = (f) => 'file:///' + path.join(DIR, 'assets', f).replace(/\\/g, '/');
@@ -170,7 +171,7 @@ function feed() {
 
 const page = (body) => `<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">${FONTS}<style>${CSS}</style></head><body>${body}</body></html>`;
 
-const browser = await puppeteer.launch({ executablePath: 'C:/Program Files/Google/Chrome/Application/chrome.exe', headless: true, args: ['--allow-file-access-from-files'] });
+const browser = await puppeteer.launch({ executablePath: CHROME, headless: true, args: [...CHROME_ARGS, '--allow-file-access-from-files'] });
 const pg = await browser.newPage();
 for (const [name, html, w, h] of [['Horizontal_1536x1024', horizontal(), 1536, 1024], ['Feed_1080x1350', feed(), 1080, 1350]]) {
   const file = path.join(DIR, 'assets', `arte_${name}.html`);

@@ -6,3 +6,4 @@ oferta/assets/*.html
 *.tmp
 ~$*
 entrega/
+.venv/
