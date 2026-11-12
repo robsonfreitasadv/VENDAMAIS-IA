@@ -15,7 +15,7 @@
 | Formas de pagamento | Pix, cartão e boleto (atenção: no boleto o acesso só sai após a compensação) |
 | Página de vendas | `https://[SEU-DOMINIO]/` (preencher quando houver domínio) |
 | Página de obrigado | `https://[SEU-DOMINIO]/obrigado.html` |
-| E-mail de contato exibido | O mesmo dos termos de uso (`[E-MAIL]`). Será exibido ao comprador pela plataforma |
+| E-mail de contato exibido | O mesmo dos termos de uso (vendamaisia.suporte@gmail.com). Será exibido ao comprador pela plataforma |
 
 ## 2. Descrição curta (até ~200 caracteres)
 
