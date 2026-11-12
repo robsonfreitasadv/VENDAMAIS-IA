@@ -50,7 +50,7 @@ Se um dia voltar a usar um PC Windows: `git clone`, `npm ci`, `py -m pip install
 2. **E-mail de contato** para termos, privacidade e Kiwify: criar um Gmail próprio do VENDAMAIS IA para o teste (o do cartão CNPJ é de outro negócio); com domínio próprio, trocar por contato@dominio via Cloudflare Email Routing e substituir `[E-MAIL]` em `pagina/termos.html` e `pagina/privacidade.html`.
 3. Consultar "VENDAMAIS IA" no INPI.
 4. Criar o produto na Kiwify seguindo `oferta/PRODUTO_KIWIFY.md` e subir o pacote (`.venv/bin/python empacotar.py` → `entrega/`).
-5. Colar o link do checkout em `CHECKOUT_URL` (`pagina/fonte-index.html`) e rodar `.venv/bin/python embutir.py`.
+5. ~~Link do checkout~~ feito: https://pay.kiwify.com.br/vU9vQ0a em `CHECKOUT_URL` (4 botões, repassa UTMs). **Venda pelo CPF do dono:** trocar o vendedor nos termos e na política (hoje dizem R F Comércio) antes da primeira venda real; aguardando nome completo e opção A/B/C.
 6. **Página no ar e conferida pelo dono (12/11/2026): https://vendamais-ia.pages.dev** (Cloudflare Pages, plano grátis, conta `e3f093d1d52e249920c64353209f167b`, projeto `vendamais-ia`). Atualizar: `.venv/bin/python embutir.py && .venv/bin/python publicar.py --enviar`. A chave do Cloudflare (só Pages: Edit) fica salva no ambiente `vendamais-ia`; nunca no repositório. A rede da nuvem não abre `pages.dev`: conferir no navegador. **Nunca publicar a raiz do repositório.** Domínio próprio (.com.br no CNPJ) só quando os anúncios validarem.
 7. Pixel da Meta e evento de compra; ao instalar, adicionar aviso de cookies na página e tirar os trechos amarelos da política. Trocar `[URL]` nos anúncios.
 8. Compra-teste completa (Pix) e teste de reembolso.
