@@ -21,7 +21,7 @@ Kit digital para negócios de beleza: 8 módulos em PDF + Manual de início ráp
 - **Fim de cada conjunto de mudanças:** atualizar `docs/HANDOFF.md`, commit com mensagem clara e `git push`. A sessão é temporária: o que não for enviado se perde.
 - Python: sempre `.venv/bin/python` (PyMuPDF 1.24.10 exige Python 3.12). Os comandos `python ...` da tabela abaixo significam `.venv/bin/python ...`.
 - Navegador: `chrome.mjs` (Chromium em `/opt/pw-browsers/chromium` no Linux; `CHROME_PATH` para outro). Não há Excel nem Word: conferir planilha e .docx no Google Sheets/Docs.
-- `build/`, `entrega/`, `node_modules/` e `.venv/` não vão para o git: são gerados.
+- `build/`, `entrega/`, `site/`, `site.zip`, `node_modules/` e `.venv/` não vão para o git: são gerados.
 
 ## Estrutura e comandos
 
@@ -34,6 +34,7 @@ Kit digital para negócios de beleza: 8 módulos em PDF + Manual de início ráp
 | `planilha/ajustar.py` | Gera a Planilha v2 a partir de `planilha/original.xlsx` | `cd planilha && python ajustar.py` (`--teste` cria cópia com dados fictícios) |
 | `oferta/arte.mjs` | Artes de venda (horizontal e feed) | `node oferta/arte.mjs` |
 | `oferta/demo_planilha.py` | Planilha com dados ilustrativos para imagens | `python oferta/demo_planilha.py` |
+| `publicar.py` | Site público (só as 4 páginas + `img/og.jpg`) para o Cloudflare Pages. Nunca publicar a raiz do repositório | `python publicar.py` → `site/` e `site.zip` |
 | `pagina/fonte-*.html` | Fonte da página de vendas e da de obrigado | `python embutir.py` → `pagina/index.html` e `obrigado.html` com imagens embutidas (manter abaixo de ~500 KB) |
 
 - **Não há suporte.** Não mencionar suporte em nenhum material. Só a garantia: cancelamento e reembolso em 7 dias, feitos pela plataforma de compra.

@@ -7,3 +7,5 @@ oferta/assets/*.html
 ~$*
 entrega/
 .venv/
+site/
+site.zip

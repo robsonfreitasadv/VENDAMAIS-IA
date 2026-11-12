@@ -47,11 +47,11 @@ Se um dia voltar a usar um PC Windows: `git clone`, `npm ci`, `py -m pip install
 ## Pendente / próximos passos
 
 1. **CNAE da empresa (fiscal, antes da primeira venda):** a R F Comércio e Representação Ltda. (CNPJ 64.610.463/0001-58) tem CNAE de representação comercial e varejo de alimentos. Nenhum cobre venda de material educativo digital. Ver com o contador a inclusão do CNAE adequado, o enquadramento no Simples e a emissão de nota fiscal das vendas.
-2. **E-mail de contato** para termos, privacidade e Kiwify: criar um e-mail próprio do VENDAMAIS IA (o do cartão CNPJ é de outro negócio) e substituir `[E-MAIL]` em `pagina/termos.html` e `pagina/privacidade.html`.
+2. **E-mail de contato** para termos, privacidade e Kiwify: criar um Gmail próprio do VENDAMAIS IA para o teste (o do cartão CNPJ é de outro negócio); com domínio próprio, trocar por contato@dominio via Cloudflare Email Routing e substituir `[E-MAIL]` em `pagina/termos.html` e `pagina/privacidade.html`.
 3. Consultar "VENDAMAIS IA" no INPI.
 4. Criar o produto na Kiwify seguindo `oferta/PRODUTO_KIWIFY.md` e subir o pacote (`.venv/bin/python empacotar.py` → `entrega/`).
 5. Colar o link do checkout em `CHECKOUT_URL` (`pagina/fonte-index.html`) e rodar `.venv/bin/python embutir.py`.
-6. Domínio e hospedagem; preencher `[NOME DO SERVIÇO]` na política de privacidade.
+6. Hospedagem: Cloudflare Pages, plano grátis, subdomínio `.pages.dev` para o teste (decisão de 12/11/2026). Publicar com `.venv/bin/python publicar.py` → `site.zip` (upload direto no Cloudflare, sem ligar ao GitHub). **Nunca publicar a raiz do repositório.** Depois de publicado: trocar `og:image` em `pagina/fonte-index.html` pelo endereço completo (`https://.../img/og.jpg`). Domínio próprio (.com.br no CNPJ) só quando os anúncios validarem.
 7. Pixel da Meta e evento de compra; ao instalar, adicionar aviso de cookies na página e tirar os trechos amarelos da política. Trocar `[URL]` nos anúncios.
 8. Compra-teste completa (Pix) e teste de reembolso.
 9. Testar a planilha no Google Sheets e no celular; testar os .docx no Google Docs.
