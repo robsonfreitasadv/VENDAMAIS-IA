@@ -34,7 +34,7 @@ Kit digital para negócios de beleza: 8 módulos em PDF + Manual de início ráp
 | `planilha/ajustar.py` | Gera a Planilha v2 a partir de `planilha/original.xlsx` | `cd planilha && python ajustar.py` (`--teste` cria cópia com dados fictícios) |
 | `oferta/arte.mjs` | Artes de venda (horizontal e feed) | `node oferta/arte.mjs` |
 | `oferta/demo_planilha.py` | Planilha com dados ilustrativos para imagens | `python oferta/demo_planilha.py` |
-| `publicar.py` | Site público (só as 4 páginas + `img/og.jpg`) para o Cloudflare Pages. Nunca publicar a raiz do repositório | `python publicar.py` → `site/` e `site.zip` |
+| `publicar.py` | Site público (só as 4 páginas + `img/og.jpg`) para o Cloudflare Pages. Nunca publicar a raiz do repositório | `python publicar.py` → `site/` e `site.zip`; `--enviar` publica em https://vendamais-ia.pages.dev |
 | `pagina/fonte-*.html` | Fonte da página de vendas e da de obrigado | `python embutir.py` → `pagina/index.html` e `obrigado.html` com imagens embutidas (manter abaixo de ~500 KB) |
 
 - **Não há suporte.** Não mencionar suporte em nenhum material. Só a garantia: cancelamento e reembolso em 7 dias, feitos pela plataforma de compra.
