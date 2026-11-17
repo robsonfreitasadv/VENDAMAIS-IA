@@ -20,7 +20,8 @@ ROOT = pathlib.Path(__file__).parent
 P = ROOT / 'pagina'
 SITE = ROOT / 'site'
 ZIP = ROOT / 'site.zip'
-ARQUIVOS = ['index.html', 'obrigado.html', 'termos.html', 'privacidade.html', 'img/og.jpg']
+ARQUIVOS = ['index.html', 'obrigado.html', 'termos.html', 'privacidade.html', 'img/og.jpg',
+            'robots.txt', 'sitemap.xml', 'llms.txt']
 
 if SITE.exists():
     shutil.rmtree(SITE)
@@ -46,10 +47,15 @@ if '--enviar' in sys.argv:
              '/obrigado.html': 'obrigado.html', '/termos': 'termos.html', '/termos.html': 'termos.html',
              '/privacidade': 'privacidade.html', '/privacidade.html': 'privacidade.html'}
     html = {f: (SITE / f).read_text(encoding='utf-8') for f in set(ROTAS.values())}
+    TEXTOS = {'/robots.txt': ['robots.txt', 'text/plain; charset=utf-8'],
+              '/sitemap.xml': ['sitemap.xml', 'application/xml; charset=utf-8'],
+              '/llms.txt': ['llms.txt', 'text/plain; charset=utf-8']}
+    textos = {r: [(SITE / f).read_text(encoding='utf-8'), t] for r, (f, t) in TEXTOS.items()}
     og = base64.b64encode((SITE / 'img/og.jpg').read_bytes()).decode()
     js = (f'const HTML = {json.dumps(html, ensure_ascii=False)};\n'
           f'const ROTAS = {json.dumps(ROTAS)};\n'
           f'const OG = {json.dumps(og)};\n'
+          f'const TXT = {json.dumps(textos, ensure_ascii=False)};\n'
           """export default {
   async fetch(req) {
     const p = new URL(req.url).pathname;
@@ -57,6 +63,7 @@ if '--enviar' in sys.argv:
       const b = Uint8Array.from(atob(OG), c => c.charCodeAt(0));
       return new Response(b, { headers: { 'content-type': 'image/jpeg', 'cache-control': 'public, max-age=86400' } });
     }
+    if (TXT[p]) return new Response(TXT[p][0], { headers: { 'content-type': TXT[p][1], 'cache-control': 'public, max-age=3600' } });
     const f = ROTAS[p];
     if (!f) return new Response('Página não encontrada', { status: 404, headers: { 'content-type': 'text/plain; charset=utf-8' } });
     return new Response(HTML[f], { headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=300' } });

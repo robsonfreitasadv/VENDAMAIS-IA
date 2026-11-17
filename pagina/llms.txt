@@ -1,0 +1,24 @@
+# VENDAMAIS IA
+
+> Kit digital em português para negócios de beleza (salões, barbearias, estética, manicures e designers de sobrancelhas) usarem ChatGPT e Gemini no marketing, no atendimento pelo WhatsApp e nas vendas. Preço: R$ 67, pagamento único. Download imediato. 7 dias de garantia com reembolso integral.
+
+## O que o kit contém
+- Manual de início rápido (PDF).
+- 8 módulos em PDF, 163 páginas no total, com mais de 220 comandos prontos para ChatGPT e Gemini:
+  01 Instagram e produção de conteúdo (25 comandos); 02 Atendimento e WhatsApp (65); 03 Vendas e conversão (30); 04 Fidelização e reativação de clientes (30); 05 Gestão e organização do pequeno negócio (30); 06 Campanhas prontas para vender (30 campanhas e 6 modelos); 07 Biblioteca de 40 templates editáveis; 08 Implementação em 30 dias (15 a 30 minutos por dia).
+- Bônus 1: Planilha de Gestão (Excel) com painel automático, gráfico mensal, vendas, despesas, clientes com alerta de reativação, calendário editorial, campanhas e simulador de preço.
+- Bônus 2: Kit de Aplicação (Word) com 20 modelos de mensagens para Instagram e WhatsApp, checklist de publicação, rotina semanal, prompt mestre e plano de 7 dias.
+
+## Como funciona
+Copie o comando, troque o que está entre colchetes pelas informações do seu negócio e cole no ChatGPT ou no Gemini. Funciona nas versões gratuitas. Os PDFs abrem no celular.
+
+## Para quem é
+Profissionais e donos de negócios de beleza que fazem o próprio marketing no Instagram e no WhatsApp e têm de 15 a 30 minutos por dia. Não é software automático, curso em vídeo nem garantia de faturamento.
+
+## Avisos
+Material educativo, sem promessa de vendas, faturamento ou resultados. A IA pode errar: revise tudo antes de publicar. ChatGPT é marca da OpenAI e Gemini é marca do Google; o VENDAMAIS IA não tem vínculo com essas empresas.
+
+## Links
+- Página de vendas: https://vendamais-ia.pages.dev/
+- Termos de uso: https://vendamais-ia.pages.dev/termos
+- Política de privacidade: https://vendamais-ia.pages.dev/privacidade

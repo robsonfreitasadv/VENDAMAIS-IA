@@ -31,13 +31,14 @@ Kit digital para negócios de beleza: 8 módulos em PDF + Manual de início ráp
 | `conteudo/kit-aplicacao.md`, `conteudo/modulo-07.md` + `gerar_word.py` | Entregáveis em Word (Kit de Aplicação e 40 Templates), com capa no molde da página | `node build.mjs kit-aplicacao templates-editaveis` (capas) e `python gerar_word.py` → `word/` |
 | `empacotar.py`, `entrega_modelo/LEIA-ME.txt` | Pacote de entrega para a plataforma (pasta organizada + ZIP) | `python empacotar.py` → `entrega/VENDAMAIS_IA/` e `entrega/VENDAMAIS_IA_v1.zip` |
 | `anuncios/criativos.mjs`, `anuncios/ANUNCIOS.md` | 10 criativos para Meta (6 estáticos em 4:5 e 9:16, 4 carrosséis 1:1) e a copy de cada um | `node anuncios/criativos.mjs` → `anuncios/out/` |
+| `anuncios/POSTS_ORGANICOS.md` | 10 posts orgânicos para o Instagram (ordem, legendas, hashtags, texto alternativo, bio) usando as imagens de `anuncios/out/` | zip: ver o próprio arquivo |
 | `planilha/ajustar.py` | Gera a Planilha v2 a partir de `planilha/original.xlsx` | `cd planilha && python ajustar.py` (`--teste` cria cópia com dados fictícios) |
 | `oferta/arte.mjs` | Artes de venda (horizontal e feed). `pagina/img/og.jpg` é a arte horizontal reduzida para 1200x800: gerar de novo quando a arte mudar | `node oferta/arte.mjs` |
 | `oferta/imagem_produto.mjs` | Imagem do produto na Kiwify (300x250) | `node oferta/imagem_produto.mjs` → `oferta/VENDAMAIS_IA_Produto_300x250.png` |
 | `oferta/logo.mjs` | Logotipo 600x120 (área de membros da Kiwify): fundo escuro e transparente para fundo claro | `node oferta/logo.mjs` → `oferta/VENDAMAIS_IA_Logo_600x120_*.png` |
 | `oferta/capas_modulos.mjs` | Capas dos 5 módulos da área de membros (600x900) | `node build.mjs kit-aplicacao templates-editaveis && node oferta/capas_modulos.mjs` → `oferta/capas_modulos/` |
 | `oferta/demo_planilha.py` | Planilha com dados ilustrativos para imagens | `python oferta/demo_planilha.py` |
-| `publicar.py` | Site público (só as 4 páginas + `img/og.jpg`) para o Cloudflare Pages. Nunca publicar a raiz do repositório | `python publicar.py` → `site/` e `site.zip`; `--enviar` publica em https://vendamais-ia.pages.dev |
+| `publicar.py` | Site público (4 páginas, `img/og.jpg`, `robots.txt`, `sitemap.xml`, `llms.txt`). SEO/GEO: meta tags, JSON-LD (Organization, WebSite, Product, FAQPage) em `pagina/fonte-index.html`; o FAQ do JSON-LD é gerado do FAQ da página — atualizar junto para o Cloudflare Pages. Nunca publicar a raiz do repositório | `python publicar.py` → `site/` e `site.zip`; `--enviar` publica em https://vendamais-ia.pages.dev |
 | `pagina/fonte-*.html` | Fonte da página de vendas e da de obrigado | `python embutir.py` → `pagina/index.html` e `obrigado.html` com imagens embutidas (manter abaixo de ~500 KB) |
 
 - **Não há suporte.** Não mencionar suporte em nenhum material. Só a garantia: cancelamento e reembolso em 7 dias, feitos pela plataforma de compra.

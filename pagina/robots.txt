@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+Disallow: /obrigado
+
+# Buscadores e assistentes de IA podem ler a página de vendas
+User-agent: GPTBot
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: Claude-SearchBot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://vendamais-ia.pages.dev/sitemap.xml
