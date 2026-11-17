@@ -46,6 +46,9 @@ Se um dia voltar a usar um PC Windows: `git clone`, `npm ci`, `py -m pip install
 
 ## Pendente / próximos passos
 
+- SEO/GEO no ar (17/11/2026). Falta: verificar o site no Google Search Console e no Bing Webmaster Tools (o ChatGPT busca pelo Bing) e enviar `https://vendamais-ia.pages.dev/sitemap.xml`. A verificação por meta tag precisa do código que cada ferramenta gera.
+- Posts orgânicos prontos em `anuncios/POSTS_ORGANICOS.md` (10 posts, 2 semanas).
+
 1. **CNAE da empresa (fiscal, antes da primeira venda):** a R F Comércio e Representação Ltda. (CNPJ 64.610.463/0001-58) tem CNAE de representação comercial e varejo de alimentos. Nenhum cobre venda de material educativo digital. Ver com o contador a inclusão do CNAE adequado, o enquadramento no Simples e a emissão de nota fiscal das vendas.
 2. **E-mail de contato** para termos, privacidade e Kiwify: criar um Gmail próprio do VENDAMAIS IA para o teste (o do cartão CNPJ é de outro negócio); com domínio próprio, trocar por contato@dominio via Cloudflare Email Routing e substituir `[E-MAIL]` em `pagina/termos.html` e `pagina/privacidade.html`.
 3. Consultar "VENDAMAIS IA" no INPI.
