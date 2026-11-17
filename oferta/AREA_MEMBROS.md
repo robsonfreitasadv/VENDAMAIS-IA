@@ -1,5 +1,7 @@
 # VENDAMAIS IA — Área de membros (Kiwify)
 
+> Para o Claude no Chrome: reorganize a área de membros do produto VENDAMAIS IA na Kiwify conforme este roteiro. Uma aula por arquivo, nesta ordem, com estes títulos e descrições. Remova as imagens de capa de dentro das aulas (a capa fica só como miniatura do módulo). Se não conseguir mover ou anexar arquivos, crie as aulas com título e descrição e me avise quais anexos faltam.
+>
 > Estrutura e textos prontos para colar. Uma aula por arquivo: título curto, descrição de 1 a 3 linhas e o arquivo como anexo.
 > Imagens: logotipo em `oferta/VENDAMAIS_IA_Logo_600x120_*.png`; capas dos módulos em `oferta/capas_modulos/`.
 > Sem menção a suporte. Sem promessa de resultado.
@@ -27,14 +29,14 @@ Descrição do módulo: 8 módulos com mais de 220 comandos prontos para ChatGPT
 
 | Aula | Anexo | Descrição |
 |---|---|---|
-| 01. Instagram e produção de conteúdo | `01_..._Instagram_e_producao_de_conteudo.pdf` | 25 comandos para saber o que postar, legendas, Reels e Stories. |
-| 02. Atendimento e WhatsApp | `02_..._Atendimento_e_WhatsApp.pdf` | 65 ferramentas do primeiro contato ao agendamento, incluindo respostas para "achei caro". |
-| 03. Vendas e conversão | `03_..._Vendas_e_conversao.pdf` | 30 comandos para transformar conversa em agendamento. |
-| 04. Fidelização e reativação | `04_..._Fidelizacao_e_reativacao_de_clientes.pdf` | 30 ferramentas para trazer de volta quem sumiu e fazer a cliente voltar. |
-| 05. Gestão e organização | `05_..._Gestao_e_organizacao_do_pequeno_negocio.pdf` | 30 ferramentas para organizar rotina, preço e finanças. |
-| 06. Campanhas prontas para vender | `06_..._Campanhas_prontas_para_vender.pdf` | 30 campanhas e 6 modelos para preencher os dias fracos da agenda. |
-| 07. Biblioteca de templates | `07_..._Biblioteca_de_templates_editaveis.pdf` | 40 templates. A versão editável em Word está no módulo 3. |
-| 08. Implementação em 30 dias | `08_..._Implementacao_em_30_dias.pdf` | Um passo por dia, de 15 a 30 minutos. Comece no dia seguinte ao Manual. |
+| 01. Instagram e produção de conteúdo | `01_VENDAMAIS_IA_Modulo_01_Instagram_e_producao_de_conteudo.pdf` | 25 comandos para saber o que postar, legendas, Reels e Stories. |
+| 02. Atendimento e WhatsApp | `02_VENDAMAIS_IA_Modulo_02_Atendimento_e_WhatsApp.pdf` | 65 ferramentas do primeiro contato ao agendamento, incluindo respostas para "achei caro". |
+| 03. Vendas e conversão | `03_VENDAMAIS_IA_Modulo_03_Vendas_e_conversao.pdf` | 30 comandos para transformar conversa em agendamento. |
+| 04. Fidelização e reativação | `04_VENDAMAIS_IA_Modulo_04_Fidelizacao_e_reativacao_de_clientes.pdf` | 30 ferramentas para trazer de volta quem sumiu e fazer a cliente voltar. |
+| 05. Gestão e organização | `05_VENDAMAIS_IA_Modulo_05_Gestao_e_organizacao_do_pequeno_negocio.pdf` | 30 ferramentas para organizar rotina, preço e finanças. |
+| 06. Campanhas prontas para vender | `06_VENDAMAIS_IA_Modulo_06_Campanhas_prontas_para_vender.pdf` | 30 campanhas e 6 modelos para preencher os dias fracos da agenda. |
+| 07. Biblioteca de templates | `07_VENDAMAIS_IA_Modulo_07_Biblioteca_de_templates_editaveis.pdf` | 40 templates. A versão editável em Word está no módulo 3. |
+| 08. Implementação em 30 dias | `08_VENDAMAIS_IA_Modulo_08_Implementacao_em_30_dias.pdf` | Um passo por dia, de 15 a 30 minutos. Comece no dia seguinte ao Manual. |
 
 ## Módulo 3 — Arquivos editáveis
 
