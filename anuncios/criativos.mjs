@@ -1,5 +1,6 @@
 // Gera os criativos de anúncio do VENDAMAIS IA (Meta: Facebook e Instagram).
 // Uso: node anuncios/criativos.mjs [S01 C02 ...]   → anuncios/out/*.png
+//      node anuncios/criativos.mjs --video [S01 ...] → anuncios/out/videos/S0x_reels_1080x1920.mp4 (12 s, 9:16, sem áudio)
 // Regras: só material real do kit; sem escassez falsa, sem preço riscado, sem promessa de resultado.
 import fs from 'node:fs';
 import path from 'node:path';
@@ -9,7 +10,8 @@ import { CHROME, CHROME_ARGS } from '../chrome.mjs';
 const DIR = path.dirname(new URL(import.meta.url).pathname).replace(/^\/([A-Z]:)/, '$1');
 const IMG = (f) => 'file:///' + path.join(DIR, 'img', f).replace(/\\/g, '/');
 const OUT = path.join(DIR, 'out');
-const only = process.argv.slice(2);
+const VIDEO = process.argv.includes('--video');
+const only = process.argv.slice(2).filter((a) => !a.startsWith('--'));
 
 const FONTS = '<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">';
 const LOGO = `<svg viewBox="0 0 64 64"><rect x="6" y="40" width="9" height="18" rx="2" fill="#D9BFA2"/><rect x="20" y="31" width="9" height="27" rx="2" fill="#D9BFA2"/><rect x="34" y="22" width="9" height="36" rx="2" fill="#D9BFA2"/><rect x="48" y="12" width="9" height="46" rx="2" fill="#D9BFA2"/><path d="M6 30 L24 16 L34 22 L54 5" fill="none" stroke="#EBCFD1" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M46 5 L55 4 L54 13" fill="none" stroke="#EBCFD1" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
@@ -296,6 +298,61 @@ async function shot(name, w, h, html) {
   await pg.screenshot({ path: path.join(OUT, name), clip: { x: 0, y: 0, width: w, height: h } });
 }
 fs.mkdirSync(OUT, { recursive: true });
+if (VIDEO) {
+  // Vídeo vertical: os elementos do estático 9:16 entram em sequência e o botão pulsa no fim.
+  const { spawn } = await import('node:child_process');
+  const FPS = 24, DUR = 12;
+  const VOUT = path.join(OUT, 'videos');
+  fs.mkdirSync(VOUT, { recursive: true });
+  for (const [id, fn] of Object.entries(ST)) {
+    if (only.length && !only.includes(id)) continue;
+    const file = path.join(OUT, '_tmp.html');
+    fs.writeFileSync(file, page(1080, 1920, fn(true)));
+    await pg.setViewport({ width: 1080, height: 1920, deviceScaleFactor: 1 });
+    await pg.goto('file:///' + file.replace(/\\/g, '/'), { waitUntil: 'load', timeout: 60000 });
+    await pg.evaluate(() => document.fonts.ready);
+    await pg.evaluate(() => {
+      const root = document.querySelector('.c');
+      const GRUPOS = ['phone', 'ba', 'week', 'agenda', 'chips'];
+      const beats = [];
+      let gancho = true; // marca e título já visíveis no 1º quadro (gancho e miniatura)
+      for (const el of root.children) {
+        if (el.classList.contains('spacer') || (!el.textContent.trim() && !el.querySelector('img'))) continue;
+        if (gancho) { if (el.tagName === 'H1') gancho = false; continue; }
+        if (GRUPOS.some((g) => el.classList.contains(g)) || el.querySelector(':scope > img.cov')) {
+          el.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 300, delay: 0, fill: 'both' }).pause();
+          el.dataset.grupo = '1';
+          beats.push([el, ...el.children]);
+        } else beats.push([el]);
+      }
+      let t = 500;
+      for (const grupo of beats) {
+        const passo = grupo.length > 20 ? 35 : grupo.length > 4 ? 110 : 260;
+        grupo.forEach((el, i) => el.dataset.grupo ? el.getAnimations()[0].effect.updateTiming({ delay: t }) : el.animate(
+          [{ opacity: 0, transform: (el.style.transform || '') + ' translateY(36px)' }, { opacity: 1, transform: (el.style.transform || '') + ' translateY(0)' }],
+          { duration: 500, delay: t + i * passo, fill: 'both', easing: 'cubic-bezier(.2,.7,.2,1)' }));
+        t += 380 + (grupo.length - 1) * passo;
+      }
+      const cta = root.querySelector('.cta');
+      if (cta) cta.animate([{ transform: 'scale(1)' }, { transform: 'scale(1.06)' }, { transform: 'scale(1)' }],
+        { duration: 900, delay: t + 300, iterations: 8, easing: 'ease-in-out' });
+      document.getAnimations().forEach((a) => a.pause());
+      window.__t = t;
+    });
+    const out = path.join(VOUT, `${id}_reels_1080x1920.mp4`);
+    const ff = spawn('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'image2pipe', '-framerate', String(FPS), '-i', '-',
+      '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-preset', 'medium', '-crf', '20', '-movflags', '+faststart', out]);
+    const fim = new Promise((ok, erro) => ff.on('close', (c) => (c === 0 ? ok() : erro(new Error('ffmpeg ' + c)))));
+    for (let f = 0; f < FPS * DUR; f++) {
+      await pg.evaluate((ms) => document.getAnimations().forEach((a) => { a.currentTime = ms; }), (f * 1000) / FPS);
+      const buf = await pg.screenshot({ type: 'jpeg', quality: 92, clip: { x: 0, y: 0, width: 1080, height: 1920 } });
+      if (!ff.stdin.write(buf)) await new Promise((r) => ff.stdin.once('drain', r));
+    }
+    ff.stdin.end();
+    await fim;
+    console.log('ok video', id, path.relative(DIR, out));
+  }
+} else {
 for (const [id, fn] of Object.entries(ST)) {
   if (only.length && !only.includes(id)) continue;
   await shot(`${id}_feed_1080x1350.png`, 1080, 1350, fn(false));
@@ -306,6 +363,7 @@ for (const [id, cards] of Object.entries(CA)) {
   if (only.length && !only.includes(id)) continue;
   for (let i = 0; i < cards.length; i++) await shot(`${id}_card${i + 1}_1080x1080.png`, 1080, 1080, cards[i]);
   console.log('ok', id, cards.length, 'cards');
+}
 }
 fs.rmSync(path.join(OUT, '_tmp.html'), { force: true });
 await browser.close();

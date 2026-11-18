@@ -172,6 +172,15 @@ Botões disponíveis na Meta: **Comprar agora** (quem já está quente) e **Saib
 - **Títulos por card:** 1 "30 dias, 15 a 30 min por dia" · 2 "Semana 1" · 3 "Semana 2" · 4 "Semana 3" · 5 "Semana 4" · 6 "O plano por R$ 67"
 - **Botão:** Saiba mais · **utm_content:** `c04`
 
+## Versões em vídeo para Reels e Stories (18/11/2026)
+
+Arquivos: `anuncios/out/videos/S01_reels_1080x1920.mp4` a `S06_reels_1080x1920.mp4` (12 s, 9:16, sem áudio). Gerar de novo: `node anuncios/criativos.mjs --video`.
+
+- O título (gancho) já aparece no primeiro quadro; o resto entra em sequência e o botão pulsa no fim.
+- Mesmo texto, título e botão do estático correspondente (S01 a S06).
+- No Gerenciador de Anúncios, use "personalizar por posicionamento": **vídeo** em Reels e Stories, **imagem 4:5** no Feed. Ou suba o vídeo como anúncio separado para comparar vídeo × imagem no mesmo conjunto.
+- Sem áudio: a Meta permite adicionar uma música da biblioteca dela na hora de criar o anúncio (opcional).
+
 ---
 
 ## Estrutura de campanha sugerida (teste inicial)
