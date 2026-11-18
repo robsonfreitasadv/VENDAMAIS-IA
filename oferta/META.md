@@ -9,7 +9,7 @@ Registro do que foi configurado (a extensão Claude no Chrome não guarda histó
 | Pixel ID | `1880875006593624` |
 | Conjunto de dados | VENDAMAIS IA |
 | Portfólio empresarial | Robson Freitas advocacia |
-| Contas de anúncios conectadas | nenhuma (a "Alpha 01" foi oferecida e **não** foi conectada) |
+| Contas de anúncios conectadas | Alpha 01 (conferido em 18/11/2026) |
 | Página conectada | nenhuma |
 | API de Conversões | não conectada (caixa pré-marcada foi desmarcada) |
 | Configuração automática de eventos / correspondência avançada | não ativadas |

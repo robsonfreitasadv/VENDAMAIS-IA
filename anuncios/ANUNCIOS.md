@@ -204,9 +204,21 @@ Arquivos: `anuncios/out/videos/S01_reels_1080x1920.mp4` a `S06_reels_1080x1920.m
 - [x] Pixel da Meta no site (ID 1880875006593624, ver `oferta/META.md`).
 - [x] Mesmo Pixel ID cadastrado na Kiwify (informado pelo dono; conferir no Gerenciador de Eventos na compra-teste).
 - [x] Conta de anúncios: "Alpha 01" (portfólio "Robson Freitas advocacia"), decisão do dono.
-- [ ] Conjunto de dados VENDAMAIS IA conectado à conta "Alpha 01".
-- [ ] Preço, garantia e números dos anúncios iguais aos da página (R$ 67, 7 dias, 163 páginas, mais de 220 comandos).
-- [ ] Nenhum texto promete faturamento, agenda cheia ou resultado.
-- [ ] Nada de "últimas vagas", contagem regressiva ou preço riscado.
+- [x] Conjunto de dados VENDAMAIS IA conectado à conta "Alpha 01".
+- [x] Preço, garantia e números dos anúncios iguais aos da página (R$ 67, 7 dias, 163 páginas, mais de 220 comandos).
+- [x] Nenhum texto promete faturamento, agenda cheia ou resultado.
+- [x] Nada de "últimas vagas", contagem regressiva ou preço riscado.
 - [ ] Imagens da planilha com o selo "dados ilustrativos" visível.
+
+## Campanha criada na Meta (18/11/2026) — PAUSADA
+
+Criada pela API com `anuncios/subir_campanha.py` (roda no WSL; IDs em `anuncios/campanha_meta.json`). Nada foi ativado.
+
+- **Campanha:** "VMIA | Vendas | Teste 1" (Vendas, conta Alpha 01), otimização **Compra** no Pixel VENDAMAIS IA.
+- **Conjunto A — "A | Aberto (Advantage+) | R$30":** Brasil, 22+, português, público Advantage+. Anúncios S01, S02, S03, S04, C02.
+- **Conjunto B — "B | Interesses beleza + negócio | R$30":** Brasil, 22 a 55, português; interesse em beleza (salões, manicure, cabelo, cosmetologia) **e** em empreendedorismo/pequenas empresas. Anúncios S01, S05, C01, C03, C04.
+- Identidade: Página Vendamais IA + Instagram @vendamais.ia.oficial. Posicionamentos automáticos; estáticos usam a imagem 4:5 no Feed e o **vídeo com locução** em Stories/Reels.
+- Remarketing (conjunto C) ficou de fora até o público de visitantes do Pixel crescer.
+- **Para ativar:** colocar saldo na conta Alpha 01 (pré-paga; em 18/11 mostrava R$ 0,00 e limite de gastos de R$ 60 já atingido) e ligar campanha, conjuntos e anúncios no Gerenciador. Orçamento: R$ 60/dia no total.
+- Para mudar textos: editar este arquivo, apagar a linha `creative:` e `ad:` do anúncio em `campanha_meta.json` e rodar o script de novo (o anúncio antigo deve ser excluído no Gerenciador).
 - [ ] Teste visual em celular: Feed, Stories e Reels.
