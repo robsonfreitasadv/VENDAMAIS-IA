@@ -34,7 +34,7 @@ Funis de quiz aparecem bem nos relatórios de 2026, mas os dados são de e-comme
 
 | Fase | O que entra | Quando | Status |
 |---|---|---|---|
-| 1 — Lançamento | Página de vendas + checkout + obrigado + e-mails de acesso | Agora | Página pronta (`pagina/`); checkout e e-mail dependem da plataforma e do domínio |
+| 1 — Lançamento | Página de vendas + checkout + obrigado + e-mails de acesso | Agora | Página no ar (https://vendamais-ia.pages.dev) com checkout da Kiwify; falta criar o produto na Kiwify e o e-mail de acesso |
 | 2 — Order bump | Um item complementar no checkout, 20% a 40% do preço (R$ 17 a R$ 27) | Após as primeiras 30 vendas | **Produto ainda não existe.** Candidato: "Pack Datas da Beleza 2027" — legendas, Stories e mensagens de WhatsApp para 12 datas comemorativas, prontos para adaptar |
 | 3 — Upsell / downsell | Oferta de maior valor logo após a compra | Quando houver produto e capacidade de entrega | **Não existe.** Candidatos: implementação guiada em grupo (upsell) e versão gravada (downsell). Só criar se você puder entregar |
 | 4 — Quiz | Pré-página "Qual é o maior gargalo do seu negócio de beleza?" | Depois de medir a página | Ideia |
@@ -107,12 +107,14 @@ Ordem de seções mais recomendada pelas fontes (título → problema → agita�
 
 ## 7. Pendências do funil
 
-- [ ] Escolher plataforma (Hotmart ou Kiwify) e criar o produto com preço, garantia de 7 dias e entrega dos arquivos.
-- [ ] Trocar `CHECKOUT_URL` em `pagina/index.html` pelo link do checkout.
-- [ ] Domínio; publicar a página (hospedagem estática simples, ex.: Netlify ou Cloudflare Pages).
-- [x] Termos de uso e política de privacidade: `pagina/termos.html` e `pagina/privacidade.html` (falta o e-mail de contato e os dados de hospedagem/pixel).
+- [x] Plataforma: Kiwify.
+- [ ] Criar o produto com preço, garantia de 7 dias e entrega dos arquivos (`oferta/PRODUTO_KIWIFY.md`).
+- [x] `CHECKOUT_URL` em `pagina/fonte-index.html`: https://pay.kiwify.com.br/vU9vQ0a (repassa UTMs).
+- [x] Página publicada no Cloudflare Pages: https://vendamais-ia.pages.dev.
+- [ ] Domínio próprio só quando os anúncios validarem.
+- [x] Termos de uso e política de privacidade: `pagina/termos.html` e `pagina/privacidade.html` (e-mail de contato, vendedor pessoa física e Pixel da Meta já incluídos).
 - [x] Rodapé: nome "Vendamais IA", sem CNPJ, endereço ou contato (decisão do dono, 11/11/2026). Os dados do vendedor ficam no checkout da plataforma e nos termos de uso (exigência do Decreto 7.962/2013).
-- [ ] Pixel da Meta e evento de compra (configurar na plataforma).
+- [ ] Pixel da Meta: código pronto e desligado na página; falta o ID (`META_PIXEL_ID`) e cadastrar o mesmo ID na Kiwify para o evento de compra.
 - [ ] Gravar os 5 criativos.
 
 ## Fontes

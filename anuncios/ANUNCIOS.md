@@ -2,7 +2,7 @@
 
 > Imagens em `anuncios/out/`. Gerar de novo: `node anuncios/criativos.mjs`.
 > Tudo segue `oferta/OFERTA.md`: números conferidos, sem escassez falsa, sem preço riscado, sem promessa de resultado, sem depoimento inventado, sem menção a suporte.
-> Troque `[URL]` pelo endereço da página de vendas quando ela estiver no ar.
+> Página de vendas: https://vendamais-ia.pages.dev/ (Cloudflare Pages). Com domínio próprio, troque o endereço nos links abaixo.
 
 ## Como a persuasão foi usada (e o que ficou de fora)
 
@@ -26,7 +26,7 @@ Compra por impulso acontece quando a pessoa **se reconhece na dor, entende a sol
 
 ## Os 10 criativos
 
-Botões disponíveis na Meta: **Comprar agora** (quem já está quente) e **Saiba mais** (conteúdo de valor). Link de todos: `[URL]?utm_source=meta&utm_medium=paid_social&utm_campaign=vmia_lancamento&utm_content=<código>`.
+Botões disponíveis na Meta: **Comprar agora** (quem já está quente) e **Saiba mais** (conteúdo de valor). Link de todos: `https://vendamais-ia.pages.dev/?utm_source=meta&utm_medium=paid_social&utm_campaign=vmia_lancamento&utm_content=<código>`.
 
 ### S01 — "Ela sumiu" (estático)
 - **Arquivos:** `S01_feed_1080x1350.png` (Feed) · `S01_stories_1080x1920.png` (Stories/Reels)
@@ -189,8 +189,8 @@ Botões disponíveis na Meta: **Comprar agora** (quem já está quente) e **Saib
 
 ## Checklist antes de publicar
 
-- [ ] Página de vendas no ar e `[URL]` trocado em todos os anúncios.
-- [ ] Pixel da Meta e evento de compra configurados na plataforma.
+- [x] Página de vendas no ar e endereço trocado em todos os anúncios (https://vendamais-ia.pages.dev/).
+- [ ] Pixel da Meta: colar o ID em `META_PIXEL_ID` (`pagina/fonte-index.html`), republicar e cadastrar o mesmo ID na Kiwify (evento de compra).
 - [ ] Preço, garantia e números dos anúncios iguais aos da página (R$ 67, 7 dias, 163 páginas, mais de 220 comandos).
 - [ ] Nenhum texto promete faturamento, agenda cheia ou resultado.
 - [ ] Nada de "últimas vagas", contagem regressiva ou preço riscado.
