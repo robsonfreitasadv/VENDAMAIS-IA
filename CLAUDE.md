@@ -37,6 +37,7 @@ Kit digital para negócios de beleza: 8 módulos em PDF + Manual de início ráp
 | `oferta/imagem_produto.mjs` | Imagem do produto na Kiwify (300x250) | `node oferta/imagem_produto.mjs` → `oferta/VENDAMAIS_IA_Produto_300x250.png` |
 | `oferta/logo.mjs` | Logotipo 600x120 (área de membros da Kiwify): fundo escuro e transparente para fundo claro | `node oferta/logo.mjs` → `oferta/VENDAMAIS_IA_Logo_600x120_*.png` |
 | `oferta/capas_modulos.mjs` | Capas dos 5 módulos da área de membros (600x900) | `node build.mjs kit-aplicacao templates-editaveis && node oferta/capas_modulos.mjs` → `oferta/capas_modulos/` |
+| `oferta/facebook.mjs`, `oferta/FACEBOOK.md` | Foto do perfil (1080x1080) e capa (1640x624) da Página do Facebook + roteiro para a extensão | `node oferta/facebook.mjs` → `oferta/facebook/` |
 | `oferta/demo_planilha.py` | Planilha com dados ilustrativos para imagens | `python oferta/demo_planilha.py` |
 | `publicar.py` | Site público (4 páginas, `img/og.jpg`, `robots.txt`, `sitemap.xml`, `llms.txt`). SEO/GEO: meta tags, JSON-LD (Organization, WebSite, Product, FAQPage) em `pagina/fonte-index.html`; o JSON-LD FAQPage repete o FAQ da página: mudou um, mude o outro. Publica no Cloudflare Pages. Nunca publicar a raiz do repositório | `python publicar.py` → `site/` e `site.zip`; `--enviar` publica em https://vendamais-ia.pages.dev |
 | `pagina/fonte-*.html` | Fonte da página de vendas e da de obrigado | `python embutir.py` → `pagina/index.html` e `obrigado.html` com imagens embutidas (manter abaixo de ~500 KB) |
