@@ -190,7 +190,9 @@ Botões disponíveis na Meta: **Comprar agora** (quem já está quente) e **Saib
 ## Checklist antes de publicar
 
 - [x] Página de vendas no ar e endereço trocado em todos os anúncios (https://vendamais-ia.pages.dev/).
-- [ ] Pixel da Meta: colar o ID em `META_PIXEL_ID` (`pagina/fonte-index.html`), republicar e cadastrar o mesmo ID na Kiwify (evento de compra).
+- [x] Pixel da Meta no site (ID 1880875006593624, ver `oferta/META.md`).
+- [ ] Mesmo Pixel ID cadastrado na Kiwify (evento de compra no Pix pago).
+- [ ] Conta de anúncios decidida (portfólio separado do escritório, de preferência) e Pixel conectado a ela.
 - [ ] Preço, garantia e números dos anúncios iguais aos da página (R$ 67, 7 dias, 163 páginas, mais de 220 comandos).
 - [ ] Nenhum texto promete faturamento, agenda cheia ou resultado.
 - [ ] Nada de "últimas vagas", contagem regressiva ou preço riscado.
