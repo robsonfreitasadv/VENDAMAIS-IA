@@ -176,6 +176,8 @@ Botões disponíveis na Meta: **Comprar agora** (quem já está quente) e **Saib
 
 Arquivos: `anuncios/out/videos/S01_reels_1080x1920.mp4` a `S06_reels_1080x1920.mp4` (12 s, 9:16, sem áudio). Gerar de novo: `node anuncios/criativos.mjs --video`.
 
+**Com locução e trilha (aprovado pelo dono em 18/11/2026):** `anuncios/out/videos_com_audio/S0x_reels_1080x1920_audio.mp4`. Voz feminina abre com o gancho, masculina responde, marca dita "Vendamais I-A" e pausa antes do "Toque em …" (o botão do anúncio). Vozes neurais pt-BR da Microsoft (edge-tts: Francisca e Antonio; sintéticas) e trilha instrumental original gerada por código (`anuncios/audio/trilha_suave_12s.m4a`, sem direitos de terceiros). Falas em `anuncios/audio/FALAS.md`; para mudar, edite `FALAS` no topo de `anuncios/audio/montar_audio.py` e rode `python anuncios/audio/montar_audio.py` (precisa de internet e `pip install edge-tts imageio-ffmpeg`). Use estas versões nos anúncios de Reels/Stories.
+
 - O título (gancho) já aparece no primeiro quadro; o resto entra em sequência e o botão pulsa no fim.
 - Mesmo texto, título e botão do estático correspondente (S01 a S06).
 - No Gerenciador de Anúncios, use "personalizar por posicionamento": **vídeo** em Reels e Stories, **imagem 4:5** no Feed. Ou suba o vídeo como anúncio separado para comparar vídeo × imagem no mesmo conjunto.
