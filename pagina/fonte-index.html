@@ -30,7 +30,7 @@
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "VENDAMAIS IA", "url": "https://vendamais-ia.pages.dev/", "inLanguage": "pt-BR"}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Product", "name": "VENDAMAIS IA — Kit de marketing e vendas para negócios de beleza", "description": "Kit digital com manual e 8 módulos em PDF (163 páginas), mais de 220 comandos prontos para ChatGPT e Gemini, 30 campanhas, 40 templates editáveis, plano de implementação de 30 dias, Planilha de Gestão (Excel) e Kit de Aplicação (Word), para salões, barbearias, estética, manicures e designers de sobrancelhas.", "image": "https://vendamais-ia.pages.dev/img/og.jpg", "brand": {"@type": "Brand", "name": "VENDAMAIS IA"}, "category": "Produto digital / Material educativo", "audience": {"@type": "BusinessAudience", "name": "Negócios de beleza"}, "offers": {"@type": "Offer", "price": "67.00", "priceCurrency": "BRL", "availability": "https://schema.org/InStock", "url": "https://vendamais-ia.pages.dev/", "hasMerchantReturnPolicy": {"@type": "MerchantReturnPolicy", "applicableCountry": "BR", "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow", "merchantReturnDays": 7, "refundType": "https://schema.org/FullRefund", "returnFees": "https://schema.org/FreeReturn"}}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "O que é o VENDAMAIS IA?", "acceptedAnswer": {"@type": "Answer", "text": "É um kit digital para negócios de beleza (salões, barbearias, estética, manicures e designers de sobrancelhas) usarem ChatGPT e Gemini no marketing, no atendimento e nas vendas. Reúne um manual e 8 módulos em PDF com mais de 220 comandos prontos, 30 campanhas, 40 templates editáveis, um plano de implementação de 30 dias, uma planilha de gestão em Excel e um kit de mensagens em Word."}}, {"@type": "Question", "name": "Quanto custa e como funciona a compra?", "acceptedAnswer": {"@type": "Answer", "text": "R$ 67, pagamento único, sem mensalidade. O pagamento é feito pela plataforma Kiwify (Pix, cartão ou boleto) e o acesso aos arquivos é liberado logo após a confirmação."}}, {"@type": "Question", "name": "Preciso pagar pelo ChatGPT ou pelo Gemini?", "acceptedAnswer": {"@type": "Answer", "text": "Não. Todos os comandos foram pensados para as versões gratuitas. As versões pagas podem dar respostas mais elaboradas, mas não são necessárias."}}, {"@type": "Question", "name": "Preciso entender de tecnologia ou de marketing?", "acceptedAnswer": {"@type": "Answer", "text": "Não. É copiar o comando, trocar o que está entre colchetes pelas informações do seu negócio e colar na IA. O Manual de início rápido mostra o passo a passo com um exemplo."}}, {"@type": "Question", "name": "Como e quando recebo o material?", "acceptedAnswer": {"@type": "Answer", "text": "Logo após a confirmação do pagamento, você recebe o acesso para baixar todos os arquivos. No Pix, a confirmação costuma ser imediata."}}, {"@type": "Question", "name": "Funciona no celular?", "acceptedAnswer": {"@type": "Answer", "text": "Sim. Os PDFs abrem no celular, e você pode copiar os comandos direto deles. A planilha funciona melhor no computador, no Excel; no celular, pelo aplicativo do Excel."}}, {"@type": "Question", "name": "Serve para outro tipo de negócio?", "acceptedAnswer": {"@type": "Answer", "text": "A maior parte dos comandos funciona para qualquer pequeno negócio, trocando as informações entre colchetes. Mas os exemplos e a linguagem foram feitos para quem trabalha com beleza."}}, {"@type": "Question", "name": "A IA não vai inventar coisas sobre o meu negócio?", "acceptedAnswer": {"@type": "Answer", "text": "Os comandos já trazem instruções como \"não invente preços, resultados ou diferenciais\". Mesmo assim, a IA pode errar, por isso o kit ensina a revisar tudo antes de publicar ou enviar."}}, {"@type": "Question", "name": "Posso colocar dados das minhas clientes na IA?", "acceptedAnswer": {"@type": "Answer", "text": "Não recomendamos. O kit orienta a usar apelidos ou códigos e a não colar nomes completos, telefones, fotos ou dados de saúde em ferramentas de IA."}}, {"@type": "Question", "name": "E se eu não gostar?", "acceptedAnswer": {"@type": "Answer", "text": "Você tem 7 dias de garantia. Peça o cancelamento e o reembolso pela própria plataforma de pagamento, dentro desse prazo, e receba o valor integral."}}, {"@type": "Question", "name": "O kit garante que vou vender mais?", "acceptedAnswer": {"@type": "Answer", "text": "Não. O VENDAMAIS IA é um material educativo e prático. Ele organiza e acelera o seu marketing e o seu atendimento, mas os resultados dependem da execução, da qualidade dos seus serviços, do seu mercado e de outros fatores do seu negócio."}}]}</script>
-<!-- Pixel / analytics: inserir aqui quando a plataforma estiver configurada (ver oferta/FUNIL.md). -->
+<!-- Pixel da Meta: configurado no script do fim da página (META_PIXEL_ID), carregado só após consentimento. -->
 <style>
 :root{
   --navy:#17283B;--navy-2:#0F1C2B;--navy-3:#22384F;
@@ -218,6 +218,16 @@ footer a{color:#C9D3DD}
   .ba-row{padding:16px}
 }
 @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto;transition:none!important}}
+
+/* consentimento de cookies (só aparece se META_PIXEL_ID estiver preenchido) */
+.ck{position:fixed;left:12px;right:12px;bottom:12px;z-index:80;max-width:560px;margin:0 auto;background:#fff;color:var(--ink);border:1px solid var(--line);border-radius:16px;box-shadow:0 18px 50px rgba(15,28,43,.25);padding:18px 18px 16px;font-size:14.5px;line-height:1.5;display:none}
+.ck.show{display:block}
+.ck p{margin:0 0 12px}
+.ck a{color:var(--champ-ink)}
+.ck .b{display:flex;gap:10px}
+.ck button{flex:1;font:inherit;font-weight:700;border-radius:999px;padding:11px 14px;cursor:pointer;border:2px solid var(--navy);background:var(--navy);color:#fff}
+.ck button.alt{background:#fff;color:var(--navy)}
+footer button.ckl{background:none;border:0;padding:0;font:inherit;color:#C9D3DD;text-decoration:underline;cursor:pointer}
 </style>
 </head>
 <body>
@@ -502,7 +512,7 @@ footer a{color:#C9D3DD}
     <div class="brand"><svg><use href="#logo"/></svg>VENDAMAIS <span>IA</span></div>
     <p>Material educativo. Não há promessa de vendas, faturamento ou resultados. A inteligência artificial pode errar: revise tudo antes de publicar ou enviar. Os dados exibidos na imagem da planilha são meramente ilustrativos.</p>
     <p>ChatGPT é marca da OpenAI e Gemini é marca do Google. O VENDAMAIS IA não tem vínculo com essas empresas.</p>
-    <nav><a href="termos.html">Termos de uso</a><a href="privacidade.html">Política de privacidade</a></nav>
+    <nav><a href="termos.html">Termos de uso</a><a href="privacidade.html">Política de privacidade</a><button type="button" class="ckl" id="ck-abrir" hidden>Preferências de cookies</button></nav>
     <p>© <span id="ano"></span> Vendamais IA. Todos os direitos reservados.</p>
   </div>
 </footer>
@@ -510,6 +520,12 @@ footer a{color:#C9D3DD}
 <div class="sticky" id="sticky">
   <div class="p">R$ 67<small>7 dias de garantia</small></div>
   <a class="btn cta" href="#oferta">Quero agora <svg><use href="#arrow"/></svg></a>
+</div>
+
+
+<div class="ck" id="ck" role="dialog" aria-live="polite" aria-label="Preferências de cookies">
+  <p>Usamos cookies da Meta (Facebook e Instagram) para medir os anúncios, somente se você aceitar. Sem isso, a página funciona normalmente. <a href="privacidade.html#cookies">Saiba mais</a>.</p>
+  <div class="b"><button type="button" class="alt" id="ck-recusar">Recusar</button><button type="button" id="ck-aceitar">Aceitar</button></div>
 </div>
 
 <script>
@@ -523,6 +539,43 @@ footer a{color:#C9D3DD}
       a.href = CHECKOUT_URL + (location.search || ''); // repassa UTMs do anúncio ao checkout
     });
   }
+
+  // ===== Pixel da Meta (só com consentimento) =====
+  // Cole aqui o ID do Pixel (Gerenciador de Eventos da Meta → Fontes de dados → Pixel).
+  // Vazio = sem pixel e sem aviso de cookies.
+  var META_PIXEL_ID = '';
+  var CK = 'vmia_cookies'; // 'aceito' | 'recusado'
+  function ckGet() { try { return localStorage.getItem(CK); } catch (e) { return null; } }
+  function ckSet(v) { try { localStorage.setItem(CK, v); } catch (e) {} }
+  function carregarPixel() {
+    if (window.fbq) return;
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', META_PIXEL_ID);
+    fbq('track', 'PageView');
+    fbq('track', 'ViewContent', { content_name: 'VENDAMAIS IA', content_type: 'product', value: 67, currency: 'BRL' });
+  }
+  if (META_PIXEL_ID) {
+    var ck = document.getElementById('ck'), abrir = document.getElementById('ck-abrir');
+    abrir.hidden = false;
+    if (ckGet() === 'aceito') carregarPixel();
+    else if (ckGet() !== 'recusado') ck.classList.add('show');
+    document.getElementById('ck-aceitar').onclick = function () { ckSet('aceito'); ck.classList.remove('show'); carregarPixel(); };
+    document.getElementById('ck-recusar').onclick = function () {
+      var tinha = !!window.fbq; ckSet('recusado'); ck.classList.remove('show');
+      if (tinha) location.reload(); // revogou: recarrega sem o pixel
+    };
+    abrir.onclick = function () { ck.classList.add('show'); };
+    document.querySelectorAll('a.cta').forEach(function (a) {
+      a.addEventListener('click', function () {
+        if (window.fbq) fbq('track', 'InitiateCheckout', { value: 67, currency: 'BRL', num_items: 1 });
+      });
+    });
+  }
+
   document.getElementById('ano').textContent = new Date().getFullYear();
 
   // barra fixa: aparece depois do topo e some na seção de oferta
