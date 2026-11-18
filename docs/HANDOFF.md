@@ -46,7 +46,7 @@ Se um dia voltar a usar um PC Windows: `git clone`, `npm ci`, `py -m pip install
 
 ## Pendente / próximos passos
 
-- **Pixel da Meta pronto, desligado (18/11/2026):** aviso de cookies + Pixel carregado só após "Aceitar"; eventos PageView, ViewContent e InitiateCheckout (cliques nos botões de compra). Purchase fica com a Kiwify (mesmo Pixel ID cadastrado lá), nunca na página de obrigado. Para ligar: colar o ID em `META_PIXEL_ID` (`pagina/fonte-index.html`), `embutir.py` e `publicar.py --enviar`. Política de privacidade já atualizada (Meta, finalidade, transferência internacional, revogação).
+- **Pixel da Meta LIGADO (18/11/2026), ID 1880875006593624 — detalhes em `oferta/META.md`.** Antes: aviso de cookies + Pixel carregado só após "Aceitar"; eventos PageView, ViewContent e InitiateCheckout (cliques nos botões de compra). Purchase fica com a Kiwify (mesmo Pixel ID cadastrado lá), nunca na página de obrigado. Para ligar: colar o ID em `META_PIXEL_ID` (`pagina/fonte-index.html`), `embutir.py` e `publicar.py --enviar`. Política de privacidade já atualizada (Meta, finalidade, transferência internacional, revogação).
 
 - SEO/GEO no ar (17/11/2026). Meta tag do Google Search Console já está na página (17/11). Falta: concluir a verificação no Search Console e enviar `https://vendamais-ia.pages.dev/sitemap.xml`; no Bing Webmaster Tools (o ChatGPT busca pelo Bing), o caminho mais simples é importar do Search Console, sem nova meta tag.
 - Posts orgânicos prontos em `anuncios/POSTS_ORGANICOS.md` (10 posts, 2 semanas).
