@@ -24,7 +24,7 @@ Registro do que foi configurado (a extensão Claude no Chrome não guarda histó
 
 ## Pendências
 
-1. Cadastrar o Pixel ID na Kiwify (Produto → Pixels/Rastreamento), compra no Pix **pago**.
-2. Decidir a conta de anúncios antes de anunciar. Conectar o conjunto de dados a uma conta é permanente.
+1. Pixel ID cadastrado na Kiwify (informado pelo dono em 18/11/2026; confirmar no Gerenciador de Eventos após a compra-teste).
+2. **Decisão do dono (18/11/2026): anunciar pela conta "Alpha 01", no portfólio "Robson Freitas advocacia".** Falta conectar o conjunto de dados VENDAMAIS IA a essa conta (permanente).
 3. Conferir com a extensão Meta Pixel Helper: nada antes do aceite; PageView e ViewContent depois.
 4. Página do Facebook "VENDAMAIS IA": roteiro em `oferta/FACEBOOK.md`.

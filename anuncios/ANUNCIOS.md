@@ -200,8 +200,9 @@ Arquivos: `anuncios/out/videos/S01_reels_1080x1920.mp4` a `S06_reels_1080x1920.m
 
 - [x] Página de vendas no ar e endereço trocado em todos os anúncios (https://vendamais-ia.pages.dev/).
 - [x] Pixel da Meta no site (ID 1880875006593624, ver `oferta/META.md`).
-- [ ] Mesmo Pixel ID cadastrado na Kiwify (evento de compra no Pix pago).
-- [ ] Conta de anúncios decidida (portfólio separado do escritório, de preferência) e Pixel conectado a ela.
+- [x] Mesmo Pixel ID cadastrado na Kiwify (informado pelo dono; conferir no Gerenciador de Eventos na compra-teste).
+- [x] Conta de anúncios: "Alpha 01" (portfólio "Robson Freitas advocacia"), decisão do dono.
+- [ ] Conjunto de dados VENDAMAIS IA conectado à conta "Alpha 01".
 - [ ] Preço, garantia e números dos anúncios iguais aos da página (R$ 67, 7 dias, 163 páginas, mais de 220 comandos).
 - [ ] Nenhum texto promete faturamento, agenda cheia ou resultado.
 - [ ] Nada de "últimas vagas", contagem regressiva ou preço riscado.
