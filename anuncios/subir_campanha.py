@@ -6,7 +6,7 @@ Roda no WSL (a CLI/credenciais da Meta ficam lá):
 
 Lê o token de ~/.config/meta-ads/.env (nunca do repositório). Textos, títulos,
 botões e utm_content vêm de anuncios/ANUNCIOS.md. Os IDs criados ficam em
-anuncios/campanha_meta.json, e uma nova execução só cria o que ainda não existe.
+anuncios/campanha_meta_<conta>.json, e uma nova execução só cria o que ainda não existe.
 Nada é ativado aqui: ativar (gastar) é decisão do dono, no Gerenciador.
 """
 import json
@@ -19,10 +19,13 @@ import requests
 
 AQUI = Path(__file__).resolve().parent
 OUT = AQUI / "out"
-ESTADO = AQUI / "campanha_meta.json"
 API = "https://graph.facebook.com/v23.0/"
 
-CONTA = "act_321579250409258"          # Alpha 01
+# Conta de anúncios em uso desde 18/11/2026: "Robson S Freitas" (pré-paga, com saldo).
+# A primeira versão foi criada na Alpha 01 (act_321579250409258), sem saldo; IDs dela
+# ficam em campanha_meta_act_321579250409258.json.
+CONTA = "act_598501181201373"
+ESTADO = AQUI / f"campanha_meta_{CONTA}.json"
 PAGINA = "1451545498044026"            # Página Vendamais IA
 INSTAGRAM = "17841462612974667"        # @vendamais.ia.oficial (ig_user_id)
 PIXEL = "1880875006593624"             # conjunto de dados VENDAMAIS IA

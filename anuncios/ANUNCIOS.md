@@ -212,13 +212,15 @@ Arquivos: `anuncios/out/videos/S01_reels_1080x1920.mp4` a `S06_reels_1080x1920.m
 
 ## Campanha criada na Meta (18/11/2026) — PAUSADA
 
-Criada pela API com `anuncios/subir_campanha.py` (roda no WSL; IDs em `anuncios/campanha_meta.json`). Nada foi ativado.
+Criada pela API com `anuncios/subir_campanha.py` (roda no WSL; IDs em `anuncios/campanha_meta_<conta>.json`). Nada foi ativado.
 
-- **Campanha:** "VMIA | Vendas | Teste 1" (Vendas, conta Alpha 01), otimização **Compra** no Pixel VENDAMAIS IA.
+- **Conta em uso: "Robson S Freitas" (act_598501181201373)**, pré-paga, com o saldo (R$ 129,99 em 18/11; limite de gastos R$ 214,20, já gastos R$ 100 → ~R$ 114 até o limite). Adicionada ao portfólio Robson Freitas advocacia em 18/11/2026 (permanente) e conectada ao Pixel. A cópia na Alpha 01 (sem saldo) ficou pausada e não deve ser ativada.
+
+- **Campanha:** "VMIA | Vendas | Teste 1" (Vendas), otimização **Compra** no Pixel VENDAMAIS IA.
 - **Conjunto A — "A | Aberto (Advantage+) | R$30":** Brasil, 22+, português, público Advantage+. Anúncios S01, S02, S03, S04, C02.
 - **Conjunto B — "B | Interesses beleza + negócio | R$30":** Brasil, 22 a 55, português; interesse em beleza (salões, manicure, cabelo, cosmetologia) **e** em empreendedorismo/pequenas empresas. Anúncios S01, S05, C01, C03, C04.
 - Identidade: Página Vendamais IA + Instagram @vendamais.ia.oficial. Posicionamentos automáticos; estáticos usam a imagem 4:5 no Feed e o **vídeo com locução** em Stories/Reels.
 - Remarketing (conjunto C) ficou de fora até o público de visitantes do Pixel crescer.
-- **Para ativar:** colocar saldo na conta Alpha 01 (pré-paga; em 18/11 mostrava R$ 0,00 e limite de gastos de R$ 60 já atingido) e ligar campanha, conjuntos e anúncios no Gerenciador. Orçamento: R$ 60/dia no total.
-- Para mudar textos: editar este arquivo, apagar a linha `creative:` e `ad:` do anúncio em `campanha_meta.json` e rodar o script de novo (o anúncio antigo deve ser excluído no Gerenciador).
+- **Para ativar:** ligar campanha, conjuntos e anúncios na conta "Robson S Freitas" no Gerenciador. Orçamento: R$ 60/dia no total (o saldo atual cobre cerca de 2 dias; o limite de gastos da conta também precisa subir para rodar 5 a 7 dias).
+- Para mudar textos: editar este arquivo, apagar a linha `creative:` e `ad:` do anúncio em `campanha_meta_<conta>.json` e rodar o script de novo (o anúncio antigo deve ser excluído no Gerenciador).
 - [ ] Teste visual em celular: Feed, Stories e Reels.
