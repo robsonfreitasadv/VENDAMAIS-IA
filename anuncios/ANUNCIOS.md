@@ -210,9 +210,9 @@ Arquivos: `anuncios/out/videos/S01_reels_1080x1920.mp4` a `S06_reels_1080x1920.m
 - [x] Nada de "últimas vagas", contagem regressiva ou preço riscado.
 - [ ] Imagens da planilha com o selo "dados ilustrativos" visível.
 
-## Campanha criada na Meta (18/11/2026) — PAUSADA
+## Campanha criada na Meta (18/11/2026) — ATIVADA em 18/11/2026 (R$ 60/dia, aprovado pelo dono)
 
-Criada pela API com `anuncios/subir_campanha.py` (roda no WSL; IDs em `anuncios/campanha_meta_<conta>.json`). Nada foi ativado.
+Criada pela API com `anuncios/subir_campanha.py` (roda no WSL; IDs em `anuncios/campanha_meta_<conta>.json`). Criada pausada e ativada em 18/11/2026 após aprovação do dono (conta "Robson S Freitas").
 
 - **Conta em uso: "Robson S Freitas" (act_598501181201373)**, pré-paga, com o saldo (R$ 129,99 em 18/11; limite de gastos R$ 214,20, já gastos R$ 100 → ~R$ 114 até o limite). Adicionada ao portfólio Robson Freitas advocacia em 18/11/2026 (permanente) e conectada ao Pixel. A cópia na Alpha 01 (sem saldo) ficou pausada e não deve ser ativada.
 
