@@ -217,8 +217,8 @@ Criada pela API com `anuncios/subir_campanha.py` (roda no WSL; IDs em `anuncios/
 - **Conta em uso: "Robson S Freitas" (act_598501181201373)**, pré-paga, com o saldo (R$ 129,99 em 18/11; limite de gastos R$ 214,20, já gastos R$ 100 → ~R$ 114 até o limite). Adicionada ao portfólio Robson Freitas advocacia em 18/11/2026 (permanente) e conectada ao Pixel. A cópia na Alpha 01 (sem saldo) ficou pausada e não deve ser ativada.
 
 - **Campanha:** "VMIA | Vendas | Teste 1" (Vendas), otimização **Compra** no Pixel VENDAMAIS IA.
-- **Conjunto A — "A | Aberto (Advantage+) | R$30":** Brasil, 22+, português, público Advantage+. Anúncios S01, S02, S03, S04, C02.
-- **Conjunto B — "B | Interesses beleza + negócio | R$30":** Brasil, 22 a 55, português; interesse em beleza (salões, manicure, cabelo, cosmetologia) **e** em empreendedorismo/pequenas empresas. Anúncios S01, S05, C01, C03, C04.
+- **Conjunto A — "A | Aberto (Advantage+) | R$30":** quem mora no Brasil, 22+, português, público Advantage+ com preferência (sugestão) por quem tem empresa: proprietários de pequenas empresas e administradores de página comercial, de página de saúde e beleza e de perfil comercial do Instagram. Anúncios S01, S02, S03, S04, C02.
+- **Conjunto B — "B | Interesses beleza + negócio | R$30":** quem mora no Brasil, 22 a 55, português; interesse em beleza (salões, manicure, cabelo, cosmetologia) **e** sinal de negócio (interesse em empreendedorismo/pequenas empresas ou comportamento de dono de empresa/administrador de página comercial). Anúncios S01, S05, C01, C03, C04.
 - Identidade: Página Vendamais IA + Instagram @vendamais.ia.oficial. Posicionamentos automáticos; estáticos usam a imagem 4:5 no Feed e o **vídeo com locução** em Stories/Reels.
 - Remarketing (conjunto C) ficou de fora até o público de visitantes do Pixel crescer.
 - **Para ativar:** ligar campanha, conjuntos e anúncios na conta "Robson S Freitas" no Gerenciador. Orçamento: R$ 60/dia no total (o saldo atual cobre cerca de 2 dias; o limite de gastos da conta também precisa subir para rodar 5 a 7 dias).

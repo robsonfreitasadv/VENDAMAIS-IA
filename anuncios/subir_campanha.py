@@ -35,15 +35,25 @@ UTM = "utm_source=meta&utm_medium=paid_social&utm_campaign=vmia_lancamento&utm_c
 BOTAO = {"Comprar agora": "SHOP_NOW", "Saiba mais": "LEARN_MORE"}
 
 CAMPANHA = "VMIA | Vendas | Teste 1"
+# Só quem mora no Brasil (decisão do dono, 18/11/2026).
+GEO = {"countries": ["BR"], "location_types": ["home"]}
+# Sinais de "tem empresa" (comportamentos da Meta): sugestão no A, filtro no B.
+TEM_EMPRESA = [
+    {"id": "6002714898572", "name": "Proprietários de pequenas empresas"},
+    {"id": "6020568271383", "name": "Administradores de Página sobre Saúde e Beleza"},
+    {"id": "6020530281783", "name": "Administradores de página comercial"},
+    {"id": "6297846662583", "name": "Administradores do perfil comercial do Instagram"},
+]
 CONJUNTOS = {
     "A": {
         "nome": "A | Aberto (Advantage+) | R$30",
         "orcamento": 3000,  # centavos de BRL
         "anuncios": ["S01", "S02", "S03", "S04", "C02"],
         "targeting": {
-            "geo_locations": {"countries": ["BR"]},
+            "geo_locations": GEO,
             "age_min": 22,
             "locales": [16],
+            "flexible_spec": [{"behaviors": TEM_EMPRESA}],  # com Advantage+ vira preferência
             "targeting_automation": {"advantage_audience": 1},
         },
     },
@@ -52,7 +62,7 @@ CONJUNTOS = {
         "orcamento": 3000,
         "anuncios": ["S01", "S05", "C01", "C03", "C04"],
         "targeting": {
-            "geo_locations": {"countries": ["BR"]},
+            "geo_locations": GEO,
             "age_min": 22,
             "age_max": 55,
             "locales": [16],
@@ -67,7 +77,7 @@ CONJUNTOS = {
                 {"interests": [
                     {"id": "6003371567474", "name": "Empreendedorismo (negócios e finanças)"},
                     {"id": "6003136069408", "name": "Pequenas e médias empresas (negócios e finanças)"},
-                ]},
+                ], "behaviors": TEM_EMPRESA},
             ],
             "targeting_automation": {"advantage_audience": 0},
         },
